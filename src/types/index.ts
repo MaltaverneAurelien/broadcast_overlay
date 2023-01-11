@@ -1,8 +1,8 @@
-import UpdateStateData from "./updateState";
+import type UpdateStateData from "./updateState";
 
 type Data<T = UpdateStateData | any> = {
   data: T;
   event: string;
-}
+};
 
-export default Data
+export default Data;

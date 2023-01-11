@@ -40,13 +40,10 @@ export interface Team {
 }
 
 export interface Players {
-  Bandit_6: Bandit6;
-  Middy_5: Bandit6;
-  Saltie_1: Bandit6;
-  Samara_2: Bandit6;
+  [key: string]: Player;
 }
 
-export interface Bandit6 {
+export interface Player {
   assists: number;
   attacker: string;
   boost: number;
@@ -58,7 +55,7 @@ export interface Bandit6 {
   isDead: boolean;
   isPowersliding: boolean;
   isSonic: boolean;
-  location: Bandit6_Location;
+  location: PlayerLocation;
   name: string;
   onGround: boolean;
   onWall: boolean;
@@ -72,7 +69,7 @@ export interface Bandit6 {
   touches: number;
 }
 
-export interface Bandit6_Location {
+export interface PlayerLocation {
   X: number;
   Y: number;
   Z: number;
