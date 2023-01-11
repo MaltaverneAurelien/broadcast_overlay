@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import convertSeconds from "./utils/convertSeconds";
 import init from "./lib/websocket";
 
+import Card from "./components/Card";
+
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
@@ -40,7 +42,7 @@ function App() {
 
   return (
     <div>
-      <p className="text-blue-500">{teams[0]?.name}</p>
+      <p className="text-blue-600">{teams[0]?.name}</p>
       <p className="text-blue-500">{teams[0]?.score}</p>
       <div>
         {players
@@ -49,9 +51,9 @@ function App() {
             <PlayerStats key={player.name} player={player} />
           ))}
       </div>
-      <h2>{convertSeconds(seconds)}</h2>
-      <p className="text-orange-500">{teams[1]?.score}</p>
+      <h2 className="text-2xl font-bold">{convertSeconds(seconds)}</h2>
       <p className="text-orange-500">{teams[1]?.name}</p>
+      <p className="text-orange-600">{teams[1]?.score}</p>
       {players
         .filter((p) => p.team === 1)
         .map((player) => (
@@ -77,4 +79,12 @@ function PlayerStats({ player }: { player: Player }) {
   );
 }
 
-export default App;
+function CssApp() {
+  return (
+    <div>
+      <Card color="orange" filled={true}/>
+    </div>
+  );
+}
+
+export default CssApp;
