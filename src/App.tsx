@@ -42,6 +42,17 @@ function App() {
 
   return (
     <div>
+      <div className="w-screen px-28 flex justify-center">
+        <Card color="blue" className="w-72 h-16">
+          <p className="mx-auto">Hello</p>
+        </Card>
+        <Card color="main" className="w-72 h-16">
+          <p className="mx-auto">Hello</p>
+        </Card>
+        <Card color="orange" className="w-72 h-16">
+          <p className="mx-auto">Hello</p>
+        </Card>
+      </div>
       <p className="text-blue-600">{teams[0]?.name}</p>
       <p className="text-blue-500">{teams[0]?.score}</p>
       <div>
@@ -82,7 +93,26 @@ function PlayerStats({ player }: { player: Player }) {
 function CssApp() {
   return (
     <div>
-      <Card color="orange" filled={true}/>
+      <div className="w-screen px-28 flex justify-center h-14 gap-x-2">
+        <Card color="blue" className="w-72">
+          <p className="mx-auto">Team 1</p>
+        </Card>
+        <Card color="main" className="w-32">
+          <p className="mx-auto">03:32</p>
+        </Card>
+        <Card color="orange" className="w-72">
+          <p className="mx-auto">Team 2</p>
+        </Card>
+      </div>
+      <div className="h-14 flex px-28 justify-center w-full mt-2">
+        <Card color="main" className="w-7/12">
+          <p className="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dicta?</p>
+        </Card>
+      </div>
+      <Card color="orange" filled={true} className="w-52 mt-10" />
+      <Card color="orange" className="w-52 h-14">
+        <p className="mx-auto">Hello</p>
+      </Card>
     </div>
   );
 }
