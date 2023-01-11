@@ -93,26 +93,58 @@ function PlayerStats({ player }: { player: Player }) {
 function CssApp() {
   return (
     <div>
-      <div className="w-screen px-28 flex justify-center h-14 gap-x-2">
-        <Card color="blue" className="w-72">
-          <p className="mx-auto">Team 1</p>
-        </Card>
-        <Card color="main" className="w-32">
-          <p className="mx-auto">03:32</p>
-        </Card>
-        <Card color="orange" className="w-72">
-          <p className="mx-auto">Team 2</p>
-        </Card>
+      <div className="grid grid-cols-12 px-96 w-screen gap-x-4">
+        <div className="col-span-4 flex flex-col gap-y-1">
+          <Card color="blue" className="w-full h-12">
+            <p className="mx-auto">Team 1</p>
+          </Card>
+
+          <div className="flex justify-end gap-x-1">
+            <Card color="blue" className="w-2/12 h-8" />
+            <Card color="blue" className="w-2/12 h-8" />
+            <Card color="blue" filled={true} className="w-2/12 h-8" />
+          </div>
+        </div>
+        <div className="col-span-4 flex flex-col w-full gap-y-2">
+          <div className="grid grid-cols-4 gap-x-2">
+            <div>
+              <Card color="blue" className="w-full h-12">
+                <span className="mx-auto font-bold text-xl">4</span>
+              </Card>
+            </div>
+            <div className="col-span-2 h-12 flex">
+              <Card color="main" className="w-full">
+                <p className="mx-auto font-semibold text-lg">03:32</p>
+              </Card>
+            </div>
+            <div>
+              <Card color="orange" className="w-full h-12">
+                <span className="mx-auto font-bold text-xl">0</span>
+              </Card>
+            </div>
+          </div>
+          <div>
+            <Card color="main" className="w-full h-12">
+              <p className="mx-auto font-semibold text-xl">DoD Cup #34</p>
+            </Card>
+          </div>
+        </div>
+
+        <div className="col-span-4 flex flex-col gap-y-1">
+          <Card color="orange" className="w-full h-12">
+            <p className="mx-auto">Team 2</p>
+          </Card>
+          <div className="flex gap-x-1">
+            <Card color="orange" filled={true} className="w-2/12 h-8" />
+            <Card color="orange" className="w-2/12 h-8" />
+            <Card color="orange" className="w-2/12 h-8" />
+          </div>
+        </div>
       </div>
-      <div className="h-14 flex px-28 justify-center w-full mt-2">
-        <Card color="main" className="w-7/12">
-          <p className="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dicta?</p>
-        </Card>
-      </div>
-      <Card color="orange" filled={true} className="w-52 mt-10" />
+      {/* <Card color="orange" filled={true} className="w-52 mt-10" />
       <Card color="orange" className="w-52 h-14">
         <p className="mx-auto">Hello</p>
-      </Card>
+      </Card> */}
     </div>
   );
 }
