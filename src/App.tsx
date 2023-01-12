@@ -41,20 +41,27 @@ function App() {
   useEffect(() => init(events), []);
 
   return (
-    <div>
-      <div className="w-screen px-28 flex justify-center">
-        <Card color="blue" className="w-72 h-16">
-          <p className="mx-auto">Hello</p>
-        </Card>
-        <Card color="main" className="w-72 h-16">
-          <p className="mx-auto">Hello</p>
-        </Card>
-        <Card color="orange" className="w-72 h-16">
-          <p className="mx-auto">Hello</p>
-        </Card>
-      </div>
-      <p className="text-blue-600">{teams[0]?.name}</p>
-      <p className="text-blue-500">{teams[0]?.score}</p>
+    <main className="bg-neutral-500">
+      <header className="flex justify-between p-2 h-80">
+        <section className="w-52">
+          <Card color="orange" filled={false} />
+          <Card color="orange" filled={false} />
+          <Card color="orange" filled={false} />
+        </section>
+        <section className="flex bg-green-500 w-96 h-14">
+          <p className="text-orange-500">{teams[1]?.name}</p>
+          <p className="text-orange-600">{teams[1]?.score}</p>
+          <h2 className="text-2xl font-bold">{convertSeconds(seconds)}</h2>
+          <p className="text-blue-500">{teams[0]?.score}</p>
+          <p className="text-blue-600">{teams[0]?.name}</p>
+        </section>
+        <section className="w-52">
+          <Card color="blue" filled={false} />
+          <Card color="blue" filled={false} />
+          <Card color="blue" filled={false} />
+        </section>
+      </header>
+
       <div>
         {players
           .filter((p) => p.team === 0)
@@ -62,15 +69,13 @@ function App() {
             <PlayerStats key={player.name} player={player} />
           ))}
       </div>
-      <h2 className="text-2xl font-bold">{convertSeconds(seconds)}</h2>
-      <p className="text-orange-500">{teams[1]?.name}</p>
-      <p className="text-orange-600">{teams[1]?.score}</p>
+
       {players
         .filter((p) => p.team === 1)
         .map((player) => (
           <PlayerStats key={player.name} player={player} />
         ))}
-    </div>
+    </main>
   );
 }
 
