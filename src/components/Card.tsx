@@ -11,6 +11,7 @@ interface CardFillProps {
   colorClasses: string;
 }
 
+// TODO: Bouiger colors et getRotationClass dans un fichier utils
 const colors = {
   "orange": "rotate-[-0.3deg]",
   "blue": "rotate-[0.3deg]",
