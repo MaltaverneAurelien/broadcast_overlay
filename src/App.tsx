@@ -9,6 +9,7 @@ import convertSeconds from "./utils/convertSeconds";
 import init from "./lib/websocket";
 
 import Card from "./components/Card";
+import Players from "./components/Players";
 
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -41,47 +42,90 @@ function App() {
   useEffect(() => init(events), []);
 
   return (
-    <main className="bg-neutral-500">
-      <header className="flex justify-between p-2 h-80">
-        <section className="w-52">
-          <Card color="orange" filled={false} />
-          <Card color="orange" filled={false} />
-          <Card color="orange" filled={false} />
-        </section>
-        <section className="flex bg-green-500 w-96 h-14">
-          <p className="text-orange-500">{teams[1]?.name}</p>
-          <p className="text-orange-600">{teams[1]?.score}</p>
-          <h2 className="text-2xl font-bold">{convertSeconds(seconds)}</h2>
-          <p className="text-blue-500">{teams[0]?.score}</p>
-          <p className="text-blue-600">{teams[0]?.name}</p>
-        </section>
-        <section className="w-52">
-          <Card color="blue" filled={false} />
-          <Card color="blue" filled={false} />
-          <Card color="blue" filled={false} />
-        </section>
-      </header>
-
-      <div>
-        {players
-          .filter((p) => p.team === 0)
-          .map((player) => (
-            <PlayerStats key={player.name} player={player} />
-          ))}
-      </div>
-
+    <main>
+      <section className="flex justify-between p-3">
+        <div className="flex flex-col w-64 gap-y-2">
+          <Card color="orange" filled={false} className="h-[3.5rem]">
+            <Players />
+          </Card>
+          <Card color="orange" filled={false} className="h-[3.5rem]">
+            <p className="text-xl mx-auto">{players[1]?.name}</p>
+            <p className="text-xl mx-auto">{players[1]?.boost}</p>
+          </Card>
+          <Card color="orange" filled={false} className="h-[3.5rem]" />
+        </div>
+        <div className="grid grid-cols-12 gap-x-4 w-[54rem]">
+          <div className="col-span-4 flex flex-col gap-y-1">
+            <Card color="blue" className="w-full h-12">
+              <p className="mx-auto">{teams[0]?.name}</p>
+            </Card>
+            <div className="flex justify-end gap-x-1">
+              <Card color="blue" className="w-2/12 h-8" />
+              <Card color="blue" className="w-2/12 h-8" />
+              <Card color="blue" filled={true} className="w-2/12 h-8" />
+            </div>
+          </div>
+          <div className="col-span-4 flex flex-col w-full gap-y-2">
+            <div className="grid grid-cols-4 gap-x-2">
+              <div>
+                <Card color="blue" className="w-full h-12">
+                  <span className="mx-auto font-bold text-xl">
+                    {teams[0]?.score}
+                  </span>
+                </Card>
+              </div>
+              <div className="col-span-2 h-12 flex">
+                <Card color="main" className="w-full">
+                  <p className="mx-auto font-semibold text-lg">
+                    {convertSeconds(seconds)}
+                  </p>
+                </Card>
+              </div>
+              <div>
+                <Card color="orange" className="w-full h-12">
+                  <span className="mx-auto font-bold text-xl">
+                    {teams[1]?.score}
+                  </span>
+                </Card>
+              </div>
+            </div>
+            <div>
+              <Card color="main" className="w-full h-12">
+                <p className="mx-auto font-semibold text-xl">DoD Cup #29</p>
+              </Card>
+            </div>
+          </div>
+          <div className="col-span-4 flex flex-col gap-y-1">
+            <Card color="orange" className="w-full h-12">
+              <p className="mx-auto">{teams[1]?.name}</p>
+            </Card>
+            <div className="flex gap-x-1">
+              <Card color="orange" filled={true} className="w-2/12 h-8" />
+              <Card color="orange" className="w-2/12 h-8" />
+              <Card color="orange" className="w-2/12 h-8" />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col w-64 gap-y-2">
+          <Card color="blue" filled={false} className="h-[3.5rem]" />
+          <Card color="blue" filled={false} className="h-[3.5rem]" />
+          <Card color="blue" filled={false} className="h-[3.5rem]" />
+        </div>
+      </section>
+      <section>
       {players
         .filter((p) => p.team === 1)
         .map((player) => (
           <PlayerStats key={player.name} player={player} />
         ))}
+      </section>
     </main>
   );
 }
 
 function PlayerStats({ player }: { player: Player }) {
   return (
-    <div>
+    <div className="bg-red-500">
       <p>{player.name}</p>
       <p>Boost : {player.boost}</p>
       <p>Saves : {player.saves}</p>
@@ -154,4 +198,4 @@ function CssApp() {
   );
 }
 
-export default CssApp;
+export default App;
