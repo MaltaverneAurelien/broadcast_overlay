@@ -1,3 +1,5 @@
+import getColorClasses from "../utils/getColorClasses";
+
 interface Props {
   color: "blue" | "orange" | "main";
   filled?: boolean;
@@ -10,24 +12,25 @@ interface CardFillProps {
 }
 
 const colors = {
-  blue: "from-blue-500 to-green-500",
-  orange: "from-red-500 to-orange-400",
-  main: "from-green-500 to-red-500",
-};
+  "orange": "rotate-[-0.3deg]",
+  "blue": "rotate-[0.3deg]",
+  "main": ""
+}
+
+function getRotationClass(color: "orange" | "blue" | "main") {
+  return colors[color]
+}
 
 const CardFill: React.FC<CardFillProps> = ({ colorClasses }) => {
   return <div className={"w-full h-full bg-gradient-to-r " + colorClasses} />;
 };
 
 const Card: React.FC<Props> = ({ children, color, filled, className }) => {
-  function getColorClasses() {
-    return colors[color];
-  }
   return (
     <div
-      className={`relative bg-gradient-to-r p-[3px] flex ${getColorClasses()} ${className}`}
+      className={`relative bg-gradient-to-r p-[3px] flex ${getColorClasses(color)} ${className}`}
     >
-      <div className="w-full h-full overflow-hidden">
+      <div className={`w-full h-full overflow-hidden ${getRotationClass(color)}` }>
         <img
           src="./background.png"
           className="w-full h-full object-cover"
@@ -37,7 +40,7 @@ const Card: React.FC<Props> = ({ children, color, filled, className }) => {
 
       <div className="absolute text-white p-2 flex top-0 left-0 right-0 bottom-0 items-center w-full">
         {filled === true ? (
-          <CardFill colorClasses={getColorClasses()} />
+          <CardFill colorClasses={getColorClasses(color)} />
         ) : children
         }
       </div>

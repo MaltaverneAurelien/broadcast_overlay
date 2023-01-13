@@ -1,58 +1,25 @@
-import type Data from "../types";
-import type Events from "../types/events";
-import type UpdateStateData from "../types/updateState";
 import type { Player } from "../types/updateState";
-
-import { useState } from "react";
+import Card from "./Card";
 
 interface Props {
   children?: React.ReactNode;
   className?: string;
+  players: Player[];
+  color: "blue" | "orange";
 }
 
-const Players: React.FC<Props> = ({ children, className }) => {
-  const [players, setPlayers] = useState<Player[]>([]);
-  const events: Events = {
-    "game:update_state": updateState,
-  };
-
-  function updateState(data: Data<UpdateStateData>) {
-    setPlayers(Object.values(data.data.players));
-  }
-
-  function PlayerStats({ player }: { player: Player }) {
-    return (
-      <div>
-        <p>{player.name}</p>
-        <p>Boost : {player.boost}</p>
-        <p>Saves : {player.saves}</p>
-        <p>Shots : {player.shots}</p>
-        <p>Assists : {player.assists}</p>
-        <p>Goals : {player.goals}</p>
-        <p>Demos : {player.demos}</p>
-        <p>Score : {player.score}</p>
-        <p>Mort ? {player.isDead ? "Oui" : "Non"}</p>
-      </div>
-    );
-  }
-
+const Players: React.FC<Props> = ({ children, className, players, color }) => {
   return (
-    <div>
-      <div className="bg-red-500">
-        {players
-          .filter((p) => p.team === 0)
-          .map((player) => (
-            <PlayerStats key={player.name} player={player} />
-          ))}
-      </div>
-      <div>
-        {players
-          .filter((p) => p.team === 1)
-          .map((player) => (
-            <PlayerStats key={player.name} player={player} />
-          ))}
-      </div>
-    </div>
+    <>
+      {players.map((p) => (
+        <Card color={color} filled={false} className="h-[3.5rem]">
+          <div className="grid grid-cols-12 w-11/12 overflow-hidden mx-auto">
+            <p className="text-xl col-span-10 text-ellipsis overflow-hidden">{p.name}</p>
+            <p className="text-xl text-end font-semibold col-span-2">{p.boost}</p>
+          </div>
+        </Card>
+      ))}
+    </>
   );
 };
 

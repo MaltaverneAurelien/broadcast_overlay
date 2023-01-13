@@ -14,7 +14,6 @@ function unhandledEvent(data: Data): void {
 function init(events: Events) {
   // create a new WebSocket connection
   const ws = new WebSocket("ws://localhost:49122");
-
   // attach a message event handler to the WebSocket
   ws.onmessage = (ev) => {
     // parse the data received over the WebSocket
