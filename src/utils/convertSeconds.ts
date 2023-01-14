@@ -5,7 +5,9 @@ function convertSeconds(s: number): string {
   const min = Math.floor(s / 60);
   const sec = s % 60;
 
-  return `${min < 10 ? "0" + min : min}:${sec < 10 ? "0" + sec : sec}`;
+  const pad = (time: any) => time.toString().padStart(2, "0");
+
+  return `${min}:${pad(sec)}`;
 }
 
 export default convertSeconds;

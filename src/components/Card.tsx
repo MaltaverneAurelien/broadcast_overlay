@@ -1,4 +1,5 @@
 import getColorClasses from "../utils/getColorClasses";
+import getRotationClass from "../utils/getRotationClass";
 
 interface Props {
   color: "blue" | "orange" | "main";
@@ -9,17 +10,6 @@ interface Props {
 
 interface CardFillProps {
   colorClasses: string;
-}
-
-// TODO: Bouiger colors et getRotationClass dans un fichier utils
-const colors = {
-  "orange": "rotate-[-0.3deg]",
-  "blue": "rotate-[0.3deg]",
-  "main": ""
-}
-
-function getRotationClass(color: "orange" | "blue" | "main") {
-  return colors[color]
 }
 
 const CardFill: React.FC<CardFillProps> = ({ colorClasses }) => {
