@@ -1,6 +1,6 @@
 import type Data from "./types";
 import type Events from "./types/events";
-import GoalScoredData from "./types/goalScored";
+import type GoalScoredData from "./types/goalScored";
 import type UpdateStateData from "./types/updateState";
 import type { Team, Player } from "./types/updateState";
 
@@ -14,8 +14,6 @@ function App() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
   const [seconds, setSeconds] = useState<number>(0);
-  // TODO: Creer une variable qui contient le joueur actuel (qui a le ballon)
-  // targetPlayer
   const [targetPlayer, setTargetPlayer] = useState<string>("");
 
   // TODO: Creer une variable status, qui contient le status du match (en cours, fini, replay)
@@ -42,7 +40,7 @@ function App() {
     // TODO: Lorsque le state est mis a jour, stocké dans une variable qui a le ballon  (targetPlayer)
     // data.data.game.target === le pseudo du joueur qui a la balle
     setTargetPlayer(data.data.game.target);
-    // Utilise la méthode find sur players pour trouver le joueur qui a la balle 
+    // Utilise la méthode find sur players pour trouver le joueur qui a la balle
     // ex: players.find((p) => p.name === data.data.game.target)
   }
 
@@ -67,11 +65,10 @@ function App() {
 
   useEffect(() => init(events), []);
 
-
   // TODO: Creer un composant "EndScoreboard" qui contient les scores finaux
   // Le composant "EndScoreboard" doit avoir les props "teams", "players"
   // Si le status est === finis, alors cacher "main" et afficher "EndScoreboard"
-  
+
   return (
     <main>
       <section className="flex justify-between p-3">
