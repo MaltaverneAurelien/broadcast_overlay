@@ -10,38 +10,37 @@ import init from "./lib/websocket";
 import Players from "./components/Players";
 import Scoreboard from "./components/Scoreboard";
 
+type GameStatus = "playing" | "replay" | "ended";
+
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
   const [seconds, setSeconds] = useState<number>(0);
   const [targetPlayer, setTargetPlayer] = useState<string>("");
+  const [gameStatus, setGameStatus] = useState<GameStatus>("ended");
 
-  // TODO: Creer une variable status, qui contient le status du match (en cours, fini, replay)
-  // Changer le status en fonction des evenements:
-  // Lorsque tu recois "game:replay_start", le status est "replay"
-  // Lorsque tu recois "game:replay_end", le status est "en cours"
-  // Lorsque tu recois "game:match_ended", le status est "fini"
-  // Lorsque tu recois "game:initialized", le status est "en cours"
-  // Il va falloir que tu implemente game:initialized, rajoute le a l'objet events, et creer la fonction correspondante
+  // TODO: Voir comment fonctionne l'overtime, changer l'affichage du temps en fonction de l'overtime
 
   const events: Events = {
     "game:update_state": updateState,
     "game:goal_scored": goalScored,
     "game:replay_start": replayStart,
-    "game:replay_will_end": replayWillEnd,
+    // "game:replay_will_end": replayWillEnd,
     "game:replay_end": replayEnd,
     "game:match_ended": matchEnded,
+    "game:initialized": initialized,
   };
 
   function updateState(data: Data<UpdateStateData>) {
     setTeams(data.data.game.teams);
     setSeconds(data.data.game.time_seconds);
+    // Object.values is used to convert an object to an array containing the values of the object
     setPlayers(Object.values(data.data.players));
-    // TODO: Lorsque le state est mis a jour, stocké dans une variable qui a le ballon  (targetPlayer)
-    // data.data.game.target === le pseudo du joueur qui a la balle
     setTargetPlayer(data.data.game.target);
     // Utilise la méthode find sur players pour trouver le joueur qui a la balle
     // ex: players.find((p) => p.name === data.data.game.target)
+
+    if (!data.data.game.isReplay) setGameStatus("playing");
   }
 
   function goalScored(data: Data<GoalScoredData>) {
@@ -52,15 +51,19 @@ function App() {
   }
 
   function replayStart(data: Data) {
-    // TODO: Voir plus haut: Changer le status a "replay"
+    setGameStatus("replay");
   }
-  function replayWillEnd(data: Data) {}
+  // function replayWillEnd(data: Data) {}
   function replayEnd(data: Data) {
-    // TODO: Voir plus haut: Changer le status a "en cours"
+    setGameStatus("playing");
   }
 
   function matchEnded(data: Data) {
-    // TODO: Voir plus haut: Changer le status a "fini"
+    setGameStatus("ended");
+  }
+
+  function initialized(data: Data) {
+    setGameStatus("playing");
   }
 
   useEffect(() => init(events), []);
