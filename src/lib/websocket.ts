@@ -1,7 +1,7 @@
 import type Data from "../types";
 import type Events from "../types/events";
 
-const WEBSOCKET_URL = process.env.WEBSOCKET_URL || "ws://localhost:49122";
+const WEBSOCKET_URL = "ws://localhost:49122";
 
 /**
  * Handles unhandled events

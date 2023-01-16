@@ -40,6 +40,7 @@ export interface Team {
 }
 
 export interface Players {
+  // key === ID of the player
   [key: string]: Player;
 }
 

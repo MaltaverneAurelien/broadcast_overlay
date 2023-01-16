@@ -6,8 +6,6 @@ interface Props {
   filled?: boolean;
   children?: React.ReactNode;
   className?: string;
-  boost?: boolean;
-  style?: { width: string };
 }
 
 interface CardFillProps {
@@ -23,7 +21,6 @@ const Card: React.FC<Props> = ({
   color,
   filled,
   className,
-  boost,
 }) => {
   return (
     <div
@@ -47,13 +44,6 @@ const Card: React.FC<Props> = ({
           children
         )}
       </div>
-      {boost === true && (
-        <div
-          className={`absolute flex bottom-0 left-0 items-center w-full h-1.5 ${getColorClasses(
-            color
-          )}`}
-        />
-      )}
     </div>
   );
 };
