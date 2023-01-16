@@ -14,8 +14,12 @@ const Players: React.FC<Props> = ({ children, className, players, color }) => {
       {players.map((p) => (
         <Card color={color} boost={true} className="h-[3.5rem]" style={{ width: `${p.boost}%` }}>
           <div className="grid grid-cols-12 w-11/12 overflow-hidden mx-auto">
-            <p className="text-xl col-span-10 text-ellipsis overflow-hidden">{p.name}</p>
-            <p className="text-xl text-end font-semibold col-span-2">{p.boost}</p>
+            <p className="text-xl col-span-10 text-ellipsis overflow-hidden">
+              {p.name}
+            </p>
+            <p className="text-xl text-end font-semibold col-span-2">
+              {p.boost}
+            </p>
           </div>
         </Card>
       ))}

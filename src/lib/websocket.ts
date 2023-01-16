@@ -1,6 +1,8 @@
 import type Data from "../types";
 import type Events from "../types/events";
 
+const WEBSOCKET_URL = process.env.WEBSOCKET_URL || "ws://localhost:49122";
+
 /**
  * Handles unhandled events
  */
@@ -13,7 +15,7 @@ function unhandledEvent(data: Data): void {
  */
 function init(events: Events) {
   // create a new WebSocket connection
-  const ws = new WebSocket("ws://localhost:49122");
+  const ws = new WebSocket(WEBSOCKET_URL);
   // attach a message event handler to the WebSocket
   ws.onmessage = (ev) => {
     // parse the data received over the WebSocket
