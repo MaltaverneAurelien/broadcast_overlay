@@ -16,7 +16,7 @@ function App() {
   const [seconds, setSeconds] = useState<number>(0);
   // TODO: Creer une variable qui contient le joueur actuel (qui a le ballon)
   // targetPlayer
-  const [targetPlayer, setTargetPlayer] = useState<string>("");
+  const [targetPlayer, setTargetPlayer] = useState<string>();
 
   // TODO: Creer une variable status, qui contient le status du match (en cours, fini, replay)
   // Changer le status en fonction des evenements:
@@ -44,6 +44,10 @@ function App() {
     setTargetPlayer(data.data.game.target);
     // Utilise la méthode find sur players pour trouver le joueur qui a la balle 
     // ex: players.find((p) => p.name === data.data.game.target)
+    console.log("TARGET DATA " + data.data.game.target);
+    console.log("targetPlayer est " + targetPlayer);
+    console.log("Find " + players.find((p) => p.name === data.data.game.target));
+
   }
 
   function goalScored(data: Data<GoalScoredData>) {
@@ -67,11 +71,9 @@ function App() {
 
   useEffect(() => init(events), []);
 
-
   // TODO: Creer un composant "EndScoreboard" qui contient les scores finaux
   // Le composant "EndScoreboard" doit avoir les props "teams", "players"
   // Si le status est === finis, alors cacher "main" et afficher "EndScoreboard"
-  
   return (
     <main>
       <section className="flex justify-between p-3">
@@ -89,8 +91,10 @@ function App() {
         </div>
       </section>
       <section>
-        <div>{targetPlayer}</div>
-        {/* <div>{players.find((p) => p.name == targetPlayer)}</div> */}
+        <div className="p-4 text-2xl text-red-400">{targetPlayer}</div>
+        {players.find((p) => p.name == targetPlayer) && (
+        <p className="p-4 text-2xl text-red-400">BONJOUR A TOUS</p>
+        )}
       </section>
       {/* TODO: Ajouter les stats du joueur qui a le ballon si il y en a un*/}
 

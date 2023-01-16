@@ -6,6 +6,8 @@ interface Props {
   filled?: boolean;
   children?: React.ReactNode;
   className?: string;
+  boost?: boolean;
+  style?: { width: string };
 }
 
 interface CardFillProps {
@@ -16,25 +18,42 @@ const CardFill: React.FC<CardFillProps> = ({ colorClasses }) => {
   return <div className={"w-full h-full bg-gradient-to-r " + colorClasses} />;
 };
 
-const Card: React.FC<Props> = ({ children, color, filled, className }) => {
+const Card: React.FC<Props> = ({
+  children,
+  color,
+  filled,
+  className,
+  boost,
+}) => {
   return (
     <div
-      className={`relative bg-gradient-to-r p-[3px] flex ${getColorClasses(color)} ${className}`}
+      className={`relative bg-gradient-to-r p-[3px] flex ${getColorClasses(
+        color
+      )} ${className}`}
     >
-      <div className={`w-full h-full overflow-hidden ${getRotationClass(color)}` }>
+      <div
+        className={`w-full h-full overflow-hidden ${getRotationClass(color)}`}
+      >
         <img
           src="./background.png"
           className="w-full h-full object-cover"
           alt="background"
         />
       </div>
-
       <div className="absolute text-white p-2 flex top-0 left-0 right-0 bottom-0 items-center w-full">
         {filled === true ? (
           <CardFill colorClasses={getColorClasses(color)} />
-        ) : children
-        }
+        ) : (
+          children
+        )}
       </div>
+      {boost === true && (
+        <div
+          className={`absolute flex bottom-0 left-0 items-center w-full h-1.5 ${getColorClasses(
+            color
+          )}`}
+        />
+      )}
     </div>
   );
 };
