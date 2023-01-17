@@ -2,7 +2,7 @@ import getColorClasses from "../utils/getColorClasses";
 import getRotationClass from "../utils/getRotationClass";
 
 interface Props {
-  color: "blue" | "orange" | "main";
+  color: "blue" | "orange" | "main" | "white";
   filled?: boolean;
   children?: React.ReactNode;
   className?: string;

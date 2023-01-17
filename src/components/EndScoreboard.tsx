@@ -8,7 +8,9 @@ interface Props {
 
 const EndScoreboard: React.FC<Props> = ({ teams, players }) => {
   return (
-  <div className="text-2xl">LE FUTUR TABLEAU DES SCORES CAR LA GAME EST TERMINE EN FAITE</div>
+    <div className="text-2xl">
+      LE FUTUR TABLEAU DES SCORES CAR LA GAME EST TERMINE EN FAITE
+    </div>
   );
 };
 

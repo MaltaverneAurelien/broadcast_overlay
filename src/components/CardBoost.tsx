@@ -3,7 +3,7 @@ import getColorClasses from "../utils/getColorClasses";
 import getRotationClass from "../utils/getRotationClass";
 
 interface Props {
-  color: "blue" | "orange";
+  color: "blue" | "orange" | "white";
   boost: number;
 }
 

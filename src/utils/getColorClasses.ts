@@ -6,6 +6,7 @@ const colors: Colors = {
   blue: "from-blue-500 to-green-500",
   orange: "from-red-500 to-orange-400",
   main: "from-green-500 to-red-500",
+  white: "bg-white",
 };
 
 function getColorClasses(color: string) {

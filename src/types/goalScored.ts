@@ -3,8 +3,14 @@ export default interface GoalScoredData {
   goalspeed: number;
   impact_location: ImpactLocation;
   scorer: Scorer;
+  assister: Assister;
+  goaltime: number
 }
 
+export interface Assister {
+  id: string;
+  name: string;
+}
 export interface BallLastTouch {
   player: string;
   speed: number;

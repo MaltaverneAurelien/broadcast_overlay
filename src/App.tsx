@@ -15,10 +15,18 @@ import Card from "./components/Card";
 
 type GameStatus = "playing" | "replay" | "ended";
 
-import getColorClasses from "./utils/getColorClasses";
+import convertSeconds from "./utils/convertSeconds";
+
 import getTeamColor from "./utils/getTeamColor";
 import TargetPlayerFooter from "./components/TargetPlayerFooter";
-import Boost from "./components/Boost";
+
+import {
+  faMeteor,
+  faStopwatch,
+  faUsers,
+  faCrown,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -53,10 +61,6 @@ function App() {
 
   function goalScored(data: Data<GoalScoredData>) {
     setLastGoal(data.data);
-    // TODO: Lorsque le but est marqué, stocké dans une variable qui à marqué, la vitesse, et qui a fait la passe (si y'en a une)
-    // Utilise l'intellisense pour voir les données disponibles
-    // Ou le fichier types/goalScored.ts
-    // Hesite pas a console.log
   }
 
   function replayStart(data: Data) {
@@ -83,12 +87,13 @@ function App() {
         <EndScoreboard teams={teams} players={players} />
       )}
       {gameStatus !== "ended" && (
-        <main className="w-screen h-screen flex flex-col pt-3 px-8 pb-8">
+        <main className="w-screen h-screen flex flex-col pt-3 px-5 pb-5">
           <section className="flex justify-between">
             <div className="flex flex-col w-64 gap-y-2">
               <Players
                 players={players.filter((p) => p.team == 0)}
                 color="blue"
+                target={targetPlayer?.id || ""}
               />
             </div>
             <Scoreboard teams={teams} seconds={seconds} />
@@ -96,36 +101,62 @@ function App() {
               <Players
                 players={players.filter((p) => p.team == 1)}
                 color="orange"
+                target={targetPlayer?.id || ""} 
               />
             </div>
           </section>
-          {gameStatus === "replay" && (
-            // TODO: Recup stats du ballon
-            <div>
-              {/* Scorer */}
-
-              <div>{lastGoal?.scorer.name}</div>
-
-              {/* {players.find((p) => p.id == lastGoal.scorer.id).name} */}
-              {/* lastGoal.scorer.teamNum */}
-              {/* getTeamColor(players.find((p) => p.id == lastGoal.scorer.id)) */}
-              {/* Assists */}
-              {/* {players.find((p) => p.id == lastGoal.ball_last_touch.player).name} */}
-
-              {lastGoal?.ball_last_touch !== undefined && (
-                <>
-                  <div>
-                    {
-                      players.find(
-                        (p) => p.id == lastGoal?.ball_last_touch.player
-                      )?.name
-                    }
+          {gameStatus === "replay" && lastGoal && (
+            // Components Replay
+            <section className="mt-auto flex flex-col w-full items-center mb-20">
+              <Card
+                color={getTeamColor(lastGoal.scorer.teamnum)}
+                className="w-[38rem] h-24"
+              >
+                <div className="w-full flex justify-around px-12 items-center pt-1">
+                  <div className="flex flex-col items-center gap-y-1.5">
+                    <FontAwesomeIcon icon={faCrown} className="w-8 h-8" />
+                    <span
+                      className="font-semibold overflow-hidden text-ellipsis whitespace-nowrap"
+                      style={{
+                        maxWidth:
+                          lastGoal.assister.name !== "" ? "8rem" : "12rem",
+                      }}
+                    >
+                      {lastGoal?.scorer.name}
+                    </span>
                   </div>
-                </>
-              )}
 
-              {/* TODO: utiliser Fontawesome pour les icones */}
-            </div>
+                  {lastGoal.assister.name !== "" && (
+                    <div className="flex flex-col items-center gap-y-1.5">
+                      <FontAwesomeIcon icon={faUsers} className="w-8 h-8 " />
+                      <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
+                        {lastGoal.assister.name}
+                      </span>
+                    </div>
+                  )}
+
+                  <div className="flex flex-col items-center gap-y-1.5">
+                    <FontAwesomeIcon icon={faMeteor} className="w-8 h-8" />
+                    <span className="font-semibold">
+                      {Math.floor(lastGoal.goalspeed)} km/h
+                    </span>
+                  </div>
+
+                  <div className="flex flex-col items-center gap-y-1.5">
+                    <FontAwesomeIcon icon={faStopwatch} className="w-8 h-8" />
+                    <span className="font-semibold">
+                      {convertSeconds(lastGoal.goaltime)}
+                    </span>
+                  </div>
+                </div>
+              </Card>
+              <div className="absolute bottom-0 w-full h-16 bg-neutral-900 flex justify-center items-center bg-opacity-95  gap-x-4">
+                <div className="bg-red-600 w-6 h-6 rounded-full" />
+                <h1 className="text-white text-2xl font-bold uppercase">
+                  Replay
+                </h1>
+              </div>
+            </section>
           )}
 
           {targetPlayer && gameStatus === "playing" && (

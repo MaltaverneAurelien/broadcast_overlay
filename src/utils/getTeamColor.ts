@@ -1,7 +1,7 @@
 import { Player } from "../types/updateState";
 
-function getTeamColor(player: Player) {
-  return player.team === 0 ? "blue" : "orange";
+function getTeamColor(team: number) {
+  return team === 0 ? "blue" : "orange";
 }
 
 export default getTeamColor;

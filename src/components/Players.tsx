@@ -1,23 +1,25 @@
-import type { Player } from "../types/updateState";
 import Card from "./Card";
-import getColorClasses from "../utils/getColorClasses";
-import getRotationClass from "../utils/getRotationClass";
 import CardBoost from "./CardBoost";
+import type { Player } from "../types/updateState";
 
 interface Props {
-  children?: React.ReactNode;
-  className?: string;
   players: Player[];
   color: "blue" | "orange";
+  target: string;
 }
 
-// TODO : Changer la barre de boost + card si c'est le joueur actif
-
-const Players: React.FC<Props> = ({ children, className, players, color }) => {
+const Players: React.FC<Props> = ({ players, color, target }) => {
   return (
     <>
       {players.map((p) => (
-        <Card key={p.id} color={color} className="h-[3.5rem]">
+        <Card
+          key={p.id}
+          color={p.id == target ? "white" : color}
+          className={`h-[3.5rem] transition-all duration-1000 ${
+            p.isDead ? "grayscale" : ""
+          } 
+          ${p.id == target ? "brightness-200" : ""}`}
+        >
           <div className="w-full">
             <div className="grid grid-cols-12 w-11/12 mx-auto">
               <p className="text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap">
@@ -27,7 +29,10 @@ const Players: React.FC<Props> = ({ children, className, players, color }) => {
                 {p.boost}
               </p>
             </div>
-            <CardBoost color={color} boost={p.boost} />
+            <CardBoost
+              color={p.id == target ? "white" : color}
+              boost={p.boost}
+            />
           </div>
         </Card>
       ))}

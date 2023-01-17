@@ -6,14 +6,14 @@ interface Props {
   player: Player;
 }
 
-// TODO : Changer la barre de boost + card si c'est le joueur actif
-
 const Boost: React.FC<Props> = ({ player }) => {
+  const colorClasses = getColorClasses(getTeamColor(player.team));
+
   return (
     <>
       <div className="relative ml-auto rounded-full w-48 h-48 flex items-center justify-center">
         <div
-          className={`bg-neutral-900 w-full h-full rounded-full flex items-center justify-center`}
+          className={`bg-gradient-to-tr ${colorClasses} p-1 w-full h-full rounded-full flex items-center justify-center`}
         >
           <img
             src="./background.png"
@@ -21,9 +21,7 @@ const Boost: React.FC<Props> = ({ player }) => {
             alt="background"
           />
           <div
-            className={`bg-gradient-to-br ${getColorClasses(
-              getTeamColor(player)
-            )} w-2/4 h-2/4 rounded-full flex items-center blur-lg justify-center opacity-50`}
+            className={`absolute bg-gradient-to-br ${colorClasses} w-4/6 h-4/6 rounded-full flex items-center blur-lg justify-center opacity-50`}
           />
         </div>
 
