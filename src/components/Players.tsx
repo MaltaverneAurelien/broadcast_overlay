@@ -18,8 +18,8 @@ const Players: React.FC<Props> = ({ children, className, players, color }) => {
       {players.map((p) => (
         <Card key={p.id} color={color} className="h-[3.5rem]">
           <div className="w-full">
-            <div className="grid grid-cols-12 w-11/12 overflow-hidden mx-auto">
-              <p className="text-xl col-span-10 text-ellipsis overflow-hidden">
+            <div className="grid grid-cols-12 w-11/12 mx-auto">
+              <p className="text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap">
                 {p.name}
               </p>
               <p className="text-xl text-end font-semibold col-span-2">
