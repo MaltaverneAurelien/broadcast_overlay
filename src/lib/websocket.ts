@@ -1,7 +1,12 @@
 import type Data from "../types";
 import type Events from "../types/events";
 
-const WEBSOCKET_URL = "ws://localhost:49122";
+import testMode from "../tests";
+
+const WEBSOCKET_URL =
+  import.meta.env.VITE_WEBSOCKET_URL || "ws://localhost:49122";
+
+const TEST_MODE = import.meta.env.VITE_TEST_MODE === "1";
 
 /**
  * Handles unhandled events
@@ -14,6 +19,8 @@ function unhandledEvent(data: Data): void {
  *  Initializes the WebSocket connection and sets up event handling
  */
 function init(events: Events) {
+  if (TEST_MODE) return testMode(events);
+
   // create a new WebSocket connection
   const ws = new WebSocket(WEBSOCKET_URL);
   // attach a message event handler to the WebSocket
