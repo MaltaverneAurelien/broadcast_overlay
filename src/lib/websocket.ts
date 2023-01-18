@@ -7,12 +7,13 @@ const WEBSOCKET_URL =
   import.meta.env.VITE_WEBSOCKET_URL || "ws://localhost:49122";
 
 const TEST_MODE = import.meta.env.VITE_TEST_MODE === "1";
+const DEBUG = import.meta.env.VITE_DEBUG === "1";
 
 /**
  * Handles unhandled events
  */
 function unhandledEvent(data: Data): void {
-  console.log("Unhandled Event: ", data.event);
+  if (DEBUG) console.log("Unhandled Event: ", data.event);
 }
 
 /**
@@ -27,6 +28,8 @@ function init(events: Events) {
   ws.onmessage = (ev) => {
     // parse the data received over the WebSocket
     const data: Data = JSON.parse(ev.data);
+
+    if (DEBUG) console.log("Received Event: ", data.event);
 
     // select the appropriate event handler function
     const eventFunction = events[data.event] || unhandledEvent;
