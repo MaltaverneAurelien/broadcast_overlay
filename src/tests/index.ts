@@ -1,15 +1,17 @@
 import Events from "../types/events";
-import { generateData, simulateEvent } from "./utils";
+import TestGame from "./Game";
+import TestUpdateStateData from "./UpdateStateData";
 
 export default function testMode(events: Events) {
-  let data = generateData(3);
-
-  const start = Date.now();
+  const game = new TestGame(2);
 
   const interval = setInterval(() => {
-    data = simulateEvent(data, start);
+    game.randomUpdateState();
 
-    events["game:update_state"](data);
+    events["game:update_state"]({
+      event: "game:update_state",
+      data: new TestUpdateStateData(game, game.playersToJSON()),
+    });
   }, 1000 / 60);
 
   return () => clearInterval(interval);
