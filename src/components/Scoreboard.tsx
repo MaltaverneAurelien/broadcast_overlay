@@ -19,21 +19,21 @@ const Scoreboard: React.FC<Props> = ({ teams, seconds }) => {
         <div className="grid grid-cols-4 gap-x-2">
           <div>
             <Card color="blue" className="w-full h-16">
-              <span className="mx-auto font-bold text-2xl">
+              <span className="mx-auto font-bold text-3xl">
                 {teams[0]?.score}
               </span>
             </Card>
           </div>
           <div className="col-span-2 h-16 flex">
             <Card color="main" className="w-full">
-              <p className="mx-auto font-semibold text-2xl">
+              <p className="mx-auto font-semibold text-3xl">
                 {convertSeconds(seconds)}
               </p>
             </Card>
           </div>
           <div>
             <Card color="orange" className="w-full h-16">
-              <span className="mx-auto font-bold text-xl">
+              <span className="mx-auto font-bold text-3xl">
                 {teams[1]?.score}
               </span>
             </Card>

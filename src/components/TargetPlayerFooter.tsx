@@ -1,5 +1,5 @@
-import type { Player } from "../types/updateState";
 import type { TransitionStatus } from "react-transition-group/Transition";
+import type { Player } from "../types/updateState";
 
 import Boost from "./Boost";
 import PlayerStats from "./PlayerStats";
@@ -16,7 +16,7 @@ const TargetPlayerFooter: React.FC<Props> = ({ player, state }) => {
     <>
       <section
         className={`mt-auto flex w-full items-center transition-all duration-300 ${
-          state === "entered" ? "opacity-100" : "opacity-0"
+          state === "entered" ? "opacity-100" : "opacity-0 hidden"
         }`}
       >
         <PlayerStats player={player} />
