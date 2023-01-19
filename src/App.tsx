@@ -70,7 +70,7 @@ function App() {
   return (
     <>
       {gameStatus === "playing" && (
-        <EndScoreboard players={players} />
+        <EndScoreboard players={players} teams={teams} />
       )}
       {/* {gameStatus !== "ended" && (
         <Main
