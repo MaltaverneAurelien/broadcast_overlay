@@ -7,7 +7,6 @@ import type Data from "./types";
 import EndScoreboard from "./components/EndScoreboard";
 import Main from "./components/Main";
 
-
 import { useState, useEffect, useRef } from "react";
 
 import GameStatus from "./types/gameStatus";
@@ -33,6 +32,11 @@ function App() {
   };
 
   function updateState(data: Data<UpdateStateData>) {
+    if (!data.data.hasGame || data.data.game.hasWinner) {
+      setGameStatus("ended");
+      return;
+    }
+
     setTeams(data.data.game.teams);
     setSeconds(data.data.game.time_seconds);
     // Object.values is used to convert an object to an array containing the values of the object
@@ -46,8 +50,6 @@ function App() {
 
     if (data.data.game.isReplay) setGameStatus("replay");
     else setGameStatus("playing");
-
-    if (!data.data.hasGame || data.data.game.hasWinner) setGameStatus("ended");
   }
   function goalScored(data: Data<GoalScoredData>) {
     setLastGoal(data.data);
@@ -79,7 +81,7 @@ function App() {
           lastGoal={lastGoal}
           teams={teams}
           seconds={seconds}
-          gameStatus={gameStatus} 
+          gameStatus={gameStatus}
         />
       )}
     </>
