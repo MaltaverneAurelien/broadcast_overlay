@@ -39,11 +39,11 @@ const Scoreboard: React.FC<Props> = ({ teams, seconds }) => {
             </Card>
           </div>
         </div>
-        <div>
+        {/* <div>
           <Card color="main" className="w-full h-16">
-            <p className="mx-auto font-semibold text-2xl">DoD Cup #29</p>
+            <p className="mx-auto font-semibold text-2xl">Dioscure Cup #</p>
           </Card>
-        </div>
+        </div> */}
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
         <Card color="orange" className="w-full h-16">
