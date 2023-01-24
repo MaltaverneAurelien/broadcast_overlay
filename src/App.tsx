@@ -18,10 +18,16 @@ function App() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [seconds, setSeconds] = useState<number>(0);
   const [targetPlayer, setTargetPlayer] = useState<Player | null>();
-  const [gameStatus, setGameStatus] = useState<GameStatus>("ended");
   const [lastGoal, setLastGoal] = useState<GoalScoredData>();
   const [bestOf, setBestOf] = useState<BestOf>(null);
   const [gamesWon, setGamesWon] = useState<number[]>([0, 0]);
+
+  const [gameStatus, setGameStatus] = useState<GameStatus>("ended");
+  const gameStatusRef = useRef<GameStatus>("ended");
+  gameStatusRef.current = gameStatus;
+
+  const bestOfRef = useRef<BestOf>(null);
+  bestOfRef.current = bestOf;
 
   // TODO: Voir comment fonctionne l'overtime, changer l'affichage du temps en fonction de l'overtime
 
@@ -46,14 +52,14 @@ function App() {
 
   function updateState(data: Data<UpdateStateData>) {
     if (!data.data.hasGame || data.data.game.hasWinner) {
-      if (data.data.game.hasWinner && gameStatus !== "ended" && bestOf !== null) {
+      if (data.data.game.hasWinner && gameStatusRef.current !== "ended" && bestOfRef.current !== null) {
         handleWin(data.data.game.teams.findIndex((t) => t.name === data.data.game.winner) as 0 | 1);
       }
       setGameStatus("ended");
       return;
     }
 
-    if (gameStatus === "ended" && bestOf !== null) {
+    if (gameStatusRef.current === "ended" && bestOfRef.current !== null) {
       if (
         gamesWon.some((g) => {
           if (bestOf === 3) return g >= 2;
@@ -63,8 +69,6 @@ function App() {
           if (bestOf === 7) return g >= 5;
         })
       ) {
-        console.log("BO FINIS");
-
         setGamesWon([0, 0]);
       }
     }
