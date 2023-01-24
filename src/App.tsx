@@ -69,10 +69,10 @@ function App() {
 
   return (
     <>
-      {gameStatus === "playing" && (
+      {gameStatus === "ended" && (
         <EndScoreboard players={players} teams={teams} />
       )}
-      {/* {gameStatus !== "ended" && (
+      {gameStatus !== "ended" && (
         <Main
           players={players}
           targetPlayer={targetPlayer}
@@ -81,7 +81,7 @@ function App() {
           seconds={seconds}
           gameStatus={gameStatus} 
         />
-      )} */}
+      )}
     </>
   );
 }
