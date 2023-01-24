@@ -3,6 +3,7 @@ import Transition from "react-transition-group/Transition";
 import GameStatus from "../types/gameStatus";
 import GoalScoredData from "../types/goalScored";
 import type { Player, Team } from "../types/updateState";
+import type BestOf from "../types/bestOf"
 
 import Players from "./Players";
 import ReplayFooter from "./ReplayFooter";
@@ -18,6 +19,8 @@ type Props = {
   teams: Team[];
   seconds: number;
   gameStatus: GameStatus;
+  bestOf: BestOf;
+  gamesWon: number[]
 };
 
 const Main: React.FC<Props> = ({
@@ -28,6 +31,8 @@ const Main: React.FC<Props> = ({
   teams,
   seconds,
   gameStatus,
+  bestOf,
+  gamesWon
 }) => {
   if (!state) state = "entered";
 
@@ -42,7 +47,7 @@ const Main: React.FC<Props> = ({
               target={targetPlayer?.id || ""}
             />
           </div>
-          <Scoreboard teams={teams} seconds={seconds} />
+          <Scoreboard teams={teams} seconds={seconds} bestOf={bestOf} gamesWon={gamesWon} />
           <div className="flex flex-col w-64 gap-y-2">
             <Players
               players={players.filter((p) => p.team == 1)}

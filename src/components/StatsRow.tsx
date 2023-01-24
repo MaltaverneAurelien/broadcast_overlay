@@ -14,7 +14,7 @@ const StatsRow: React.FC<Props> = ({ keyStat, players }) => {
 
   const Players: React.FC<PlayerProps> = ({ team }) => {
     return (
-      <>{players.filter((p) => p.team === team).map((p) => <div className={"text-white text-center " + getWidth(players)}>{p[keyStat]}</div>)}</>
+      <>{players.filter((p) => p.team === team).map((p) => <div key={"STAT"+p.id} className={"text-white text-center " + getWidth(players)}>{p[keyStat]}</div>)}</>
     );
   };
 

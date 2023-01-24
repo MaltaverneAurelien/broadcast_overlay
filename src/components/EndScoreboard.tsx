@@ -1,4 +1,6 @@
 import type { Player, Team } from "../types/updateState";
+import type BestOf from "../types/bestOf"
+
 import getWidth from "../utils/getWidth";
 import Scoreboard from "./Scoreboard";
 import StatsRow from "./StatsRow";
@@ -9,9 +11,11 @@ import background from "../assets/background.mp4";
 interface Props {
   players: Player[];
   teams: Team[];
+  bestOf: BestOf;
+  gamesWon: number[]
 }
 
-const EndScoreboard: React.FC<Props> = ({ players, teams }) => {
+const EndScoreboard: React.FC<Props> = ({ players, teams, bestOf, gamesWon }) => {
   interface PlayerProps {
     team: number;
   }
@@ -23,6 +27,7 @@ const EndScoreboard: React.FC<Props> = ({ players, teams }) => {
           .filter((p) => p.team === team)
           .map((p) => (
             <div
+              key={"End"+p.id}
               className={
                 "text-white text-center overflow-hidden whitespace-nowrap text-ellipsis " +
                 getWidth(players)
@@ -49,7 +54,7 @@ const EndScoreboard: React.FC<Props> = ({ players, teams }) => {
       </video>
       <div className="flex flex-col gap-y-8 px-24 pt-12">
         <div className="flex justify-center w-full">
-          <Scoreboard teams={teams} seconds={0} />
+          <Scoreboard teams={teams} seconds={0} bestOf={bestOf} gamesWon={gamesWon}/>
         </div>
         <div className={`h-20 flex items-center gap-x-4 w-full`}>
           <Card color={"blue"} className="flex flex-grow h-full">
