@@ -6,7 +6,7 @@ import getTeamColor from "../utils/getTeamColor";
 
 import {
   faCrown,
-  faUsers,
+  faHands,
   faMeteor,
   faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
@@ -50,7 +50,7 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
 
             {lastGoal?.assister.name !== "" && (
               <div className="flex flex-col items-center gap-y-1.5">
-                <FontAwesomeIcon icon={faUsers} className="w-8 h-8 " />
+                <FontAwesomeIcon icon={faHands} className="w-8 h-8 " />
                 <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
                   {lastGoal?.assister.name}
                 </span>

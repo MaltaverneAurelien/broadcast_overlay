@@ -16,7 +16,7 @@ const Scoreboard: React.FC<Props> = ({ teams, seconds, bestOf, gamesWon }) => {
 
   if (bestOf === 3) firstOf = 2;
   else if (bestOf === 5) firstOf = 3;
-  else if (bestOf === 7) firstOf = 5;
+  else if (bestOf === 7) firstOf = 4;
 
   return (
     <div className="grid grid-cols-12 gap-x-4 w-[64rem]">

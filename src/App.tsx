@@ -10,6 +10,7 @@ import Main from "./components/Main";
 
 import { useState, useEffect, useRef } from "react";
 
+import GameEndedData from "./types/gameEnded";
 import GameStatus from "./types/gameStatus";
 import init from "./lib/websocket";
 
@@ -20,7 +21,10 @@ function App() {
   const [targetPlayer, setTargetPlayer] = useState<Player | null>();
   const [lastGoal, setLastGoal] = useState<GoalScoredData>();
   const [bestOf, setBestOf] = useState<BestOf>(null);
+
   const [gamesWon, setGamesWon] = useState<number[]>([0, 0]);
+  const gamesWonRef = useRef<number[]>([0, 0]);
+  gamesWonRef.current = gamesWon;
 
   const [gameStatus, setGameStatus] = useState<GameStatus>("ended");
   const gameStatusRef = useRef<GameStatus>("ended");
@@ -51,28 +55,8 @@ function App() {
   };
 
   function updateState(data: Data<UpdateStateData>) {
-    if (!data.data.hasGame || data.data.game.hasWinner) {
-      if (data.data.game.hasWinner && gameStatusRef.current !== "ended" && bestOfRef.current !== null) {
-        handleWin(data.data.game.teams.findIndex((t) => t.name === data.data.game.winner) as 0 | 1);
-      }
-      setGameStatus("ended");
-      return;
-    }
-
-    if (gameStatusRef.current === "ended" && bestOfRef.current !== null) {
-      if (
-        gamesWon.some((g) => {
-          if (bestOf === 3) return g >= 2;
-
-          if (bestOf === 5) return g >= 3;
-
-          if (bestOf === 7) return g >= 5;
-        })
-      ) {
-        setGamesWon([0, 0]);
-      }
-    }
-
+    if (data.data.game.hasWinner || !data.data.hasGame)
+      return setGameStatus("ended");
     setTeams(data.data.game.teams);
     setSeconds(data.data.game.time_seconds);
     // Object.values is used to convert an object to an array containing the values of the object
@@ -87,28 +71,49 @@ function App() {
     if (data.data.game.isReplay) setGameStatus("replay");
     else setGameStatus("playing");
   }
+
   function goalScored(data: Data<GoalScoredData>) {
     setLastGoal(data.data);
   }
+
   function replayStart(data: Data) {
     setGameStatus("replay");
   }
+
   function replayEnd(data: Data) {
     setGameStatus("playing");
   }
-  function matchEnded(data: Data) {
+
+  function matchEnded(data: Data<GameEndedData>) {
+    if (bestOfRef.current !== null) handleWin(data.data.winner_team_num);
+
     setGameStatus("ended");
   }
+
   function initialized(data: Data) {
+    if (
+      bestOfRef.current !== null &&
+      gamesWonRef.current.some((g) => {
+        if (bestOfRef.current === 3) return g >= 2;
+
+        if (bestOfRef.current === 5) return g >= 3;
+
+        if (bestOfRef.current === 7) return g >= 4;
+      })
+    ) {
+      setGamesWon([0, 0]);
+    }
     setGameStatus("playing");
   }
 
   function handleWin(team: 0 | 1) {
-    setGamesWon((gamesWon) => gamesWon.map((g, i) => {
-      if (i === team) return g + 1;
-      return g;
-    }));
-  } 
+    setGamesWon((gamesWon) =>
+      gamesWon.map((g, i) => {
+        if (i === team) return g + 1;
+        return g;
+      })
+    );
+  }
 
   function handleKeyDown(event: KeyboardEvent) {
     const key = event.key.toLowerCase();
