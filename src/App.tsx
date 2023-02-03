@@ -6,6 +6,7 @@ import type Data from "./types";
 import type BestOf from "./types/bestOf";
 
 import EndScoreboard from "./components/EndScoreboard";
+import Transition from "./components/Transition";
 import Main from "./components/Main";
 
 import { useState, useEffect, useRef } from "react";
@@ -42,6 +43,7 @@ function App() {
     "game:replay_end": replayEnd,
     "game:match_ended": matchEnded,
     "game:initialized": initialized,
+    "game:replay_will_end": replayWillEnd,
   };
 
   const keyEvents: { [key: string]: () => void } = {
@@ -55,8 +57,7 @@ function App() {
   };
 
   function updateState(data: Data<UpdateStateData>) {
-    if (data.data.game.hasWinner || !data.data.hasGame)
-      return setGameStatus("ended");
+    if (data.data.game.hasWinner || !data.data.hasGame) return;
     setTeams(data.data.game.teams);
     setSeconds(data.data.game.time_seconds);
     // Object.values is used to convert an object to an array containing the values of the object
@@ -74,10 +75,19 @@ function App() {
 
   function goalScored(data: Data<GoalScoredData>) {
     setLastGoal(data.data);
+    setTimeout(() => {
+      toggleTransition();
+    }, 3000);
   }
 
   function replayStart(data: Data) {
     setGameStatus("replay");
+  }
+
+  function replayWillEnd(data: Data) {
+    setTimeout(() => {
+      toggleTransition();
+    }, 2000);
   }
 
   function replayEnd(data: Data) {
@@ -87,7 +97,12 @@ function App() {
   function matchEnded(data: Data<GameEndedData>) {
     if (bestOfRef.current !== null) handleWin(data.data.winner_team_num);
 
-    setGameStatus("ended");
+    setTimeout(() => {
+      toggleTransition();
+      setTimeout(() => {
+        setGameStatus("ended");
+      }, 1000);
+    }, 7000);
   }
 
   function initialized(data: Data) {
@@ -130,8 +145,19 @@ function App() {
     };
   }, []);
 
+  const [transition, setTransition] = useState(false);
+
+  function toggleTransition() {
+    setTransition(true);
+  }
+
+  useEffect(() => {
+    if (transition === true) setTransition(false);
+  }, [transition]);
+
   return (
     <>
+      <Transition play={transition} />
       {gameStatus === "ended" && (
         <EndScoreboard
           players={players}
