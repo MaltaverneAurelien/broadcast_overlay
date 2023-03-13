@@ -15,13 +15,23 @@ import GameEndedData from "./types/gameEnded";
 import GameStatus from "./types/gameStatus";
 import init from "./lib/websocket";
 
+const usePrevious = <T extends unknown>(value: T): T | undefined => {
+  const ref = useRef<T>();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+};
+
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
-  const [players, setPlayers] = useState<Player[]>([]);
   const [seconds, setSeconds] = useState<number>(0);
   const [targetPlayer, setTargetPlayer] = useState<Player | null>();
   const [lastGoal, setLastGoal] = useState<GoalScoredData>();
   const [bestOf, setBestOf] = useState<BestOf>(null);
+
+  const [players, setPlayers] = useState<Player[]>([]);
+  const prevPlayers = usePrevious(players);
 
   const [gamesWon, setGamesWon] = useState<number[]>([0, 0]);
   const gamesWonRef = useRef<number[]>([0, 0]);
@@ -58,13 +68,14 @@ function App() {
 
   function updateState(data: Data<UpdateStateData>) {
     if (data.data.game.hasWinner || !data.data.hasGame) return;
+
     setTeams(data.data.game.teams);
     setSeconds(data.data.game.time_seconds);
     // Object.values is used to convert an object to an array containing the values of the object
     setPlayers(Object.values(data.data.players));
-    if (data.data.game.target === "" && !data.data.game.isReplay) {
+
+    if (data.data.game.target === "" && !data.data.game.isReplay)
       setTargetPlayer(null);
-    }
 
     if (data.data.game.target !== "")
       setTargetPlayer(data.data.players[data.data.game.target]);
@@ -155,6 +166,31 @@ function App() {
     if (transition === true) setTransition(false);
   }, [transition]);
 
+  useEffect(() => {
+    if (gameStatus == "replay") return;
+
+    if (!prevPlayers) return;
+
+    for (const player of players) {
+      const old_player = prevPlayers.find((p) => p.id === player.id);
+
+      if (!old_player) continue;
+
+      if (player.demos > old_player.demos)
+        console.log(`${player.name} +1 demo`);
+
+      if (player.shots > old_player.shots) console.log(`${player.name} +1 tir`);
+
+      if (player.goals > old_player.goals) console.log(`${player.name} +1 but`);
+
+      if (player.assists > old_player.assists)
+        console.log(`${player.name} +1 assist`);
+
+      if (player.saves > old_player.saves)
+        console.log(`${player.name} +1 save`);
+    }
+  }, [players]);
+
   return (
     <>
       <Transition play={transition} />
@@ -183,3 +219,6 @@ function App() {
 }
 
 export default App;
+function updateState(data: Data<any>): void {
+  throw new Error("Function not implemented.");
+}
