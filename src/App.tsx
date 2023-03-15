@@ -2,8 +2,8 @@ import type { Team, Player } from "./types/updateState";
 import type UpdateStateData from "./types/updateState";
 import type GoalScoredData from "./types/goalScored";
 import type Events from "./types/events";
-import type Data from "./types";
 import type BestOf from "./types/bestOf";
+import type Data from "./types";
 
 import EndScoreboard from "./components/EndScoreboard";
 import Transition from "./components/Transition";
@@ -11,6 +11,7 @@ import Main from "./components/Main";
 
 import { useState, useEffect, useRef } from "react";
 
+import PlayerStatus, { StatusEvent } from "./types/playerStatus";
 import GameEndedData from "./types/gameEnded";
 import GameStatus from "./types/gameStatus";
 import init from "./lib/websocket";
@@ -40,6 +41,8 @@ function App() {
   const [gameStatus, setGameStatus] = useState<GameStatus>("ended");
   const gameStatusRef = useRef<GameStatus>("ended");
   gameStatusRef.current = gameStatus;
+
+  const [playersStatus, setPlayersStatus] = useState<PlayerStatus[]>([]);
 
   const bestOfRef = useRef<BestOf>(null);
   bestOfRef.current = bestOf;
@@ -166,6 +169,28 @@ function App() {
     if (transition === true) setTransition(false);
   }, [transition]);
 
+  function deleteLastEvent() {
+    setTimeout(() => {
+      setPlayersStatus((pS) => {
+        pS.shift();
+
+        return pS;
+      });
+    }, 5000);
+  }
+
+  function addEvent(player: Player, event: StatusEvent) {
+    setPlayersStatus([
+      ...playersStatus,
+      {
+        player_id: player.id,
+        event: event,
+      },
+    ]);
+
+    deleteLastEvent();
+  }
+
   useEffect(() => {
     if (gameStatus == "replay") return;
 
@@ -176,18 +201,15 @@ function App() {
 
       if (!old_player) continue;
 
-      if (player.demos > old_player.demos)
-        console.log(`${player.name} +1 demo`);
+      if (player.demos > old_player.demos) addEvent(player, "demo");
 
-      if (player.shots > old_player.shots) console.log(`${player.name} +1 tir`);
+      if (player.shots > old_player.shots) addEvent(player, "shot");
 
-      if (player.goals > old_player.goals) console.log(`${player.name} +1 but`);
+      if (player.goals > old_player.goals) addEvent(player, "goal");
 
-      if (player.assists > old_player.assists)
-        console.log(`${player.name} +1 assist`);
+      if (player.assists > old_player.assists) addEvent(player, "assist");
 
-      if (player.saves > old_player.saves)
-        console.log(`${player.name} +1 save`);
+      if (player.saves > old_player.saves) addEvent(player, "save");
     }
   }, [players]);
 
@@ -212,6 +234,7 @@ function App() {
           gameStatus={gameStatus}
           bestOf={bestOf}
           gamesWon={gamesWon}
+          playersStatus={playersStatus}
         />
       )}
     </>
