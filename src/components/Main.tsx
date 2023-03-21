@@ -23,6 +23,7 @@ type Props = {
   bestOf: BestOf;
   gamesWon: number[]
   playersStatus: PlayerStatus[];
+  isOT: boolean;
 };
 
 const Main: React.FC<Props> = ({
@@ -35,13 +36,14 @@ const Main: React.FC<Props> = ({
   gameStatus,
   bestOf,
   gamesWon,
-  playersStatus
+  playersStatus,
+  isOT
 }) => {
   if (!state) state = "entered";
 
   return (
     <>
-      <main className="w-screen h-screen flex flex-col pt-3 px-5 pb-5">
+      <main className="w-screen h-screen flex flex-col pt-3 px-5 pb-7">
         <section className="flex justify-between">
           <div className="flex flex-col w-64 gap-y-2">
             <Players
@@ -51,7 +53,7 @@ const Main: React.FC<Props> = ({
               playersStatus={playersStatus}
             />
           </div>
-          <Scoreboard teams={teams} seconds={seconds} bestOf={bestOf} gamesWon={gamesWon} />
+          <Scoreboard teams={teams} seconds={seconds} bestOf={bestOf} gamesWon={gamesWon} isOT={isOT} />
           <div className="flex flex-col w-64 gap-y-2">
             <Players
               players={players.filter((p) => p.team == 1)}

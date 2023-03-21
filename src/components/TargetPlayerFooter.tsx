@@ -15,7 +15,7 @@ const TargetPlayerFooter: React.FC<Props> = ({ player, state }) => {
   return (
     <>
       <section
-        className={`mt-auto flex w-full items-center transition-all duration-300 ${
+        className={`mt-auto flex w-full items-end transition-all duration-300 ${
           state === "entered" ? "opacity-100" : "opacity-0 hidden"
         }`}
       >

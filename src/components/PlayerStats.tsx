@@ -10,7 +10,7 @@ const PlayerStats: React.FC<Props> = ({ player }) => {
   return (
     <>
       <div>
-        <Card color={getTeamColor(player.team)} className="w-56 h-12">
+        <Card color={getTeamColor(player.team)} className="w-56 h-12 mb-1.5">
           <p className="text-xl font-bold mx-auto">{player.name}</p>
         </Card>
         <Card color={getTeamColor(player.team)} className="w-[36rem] h-20">

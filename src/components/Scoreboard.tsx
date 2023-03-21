@@ -9,9 +9,16 @@ interface Props {
   seconds: number;
   bestOf: BestOf;
   gamesWon: number[]; // [1, 2] 1 match win bleu, 2 match orange
+  isOT?: boolean;
 }
 
-const Scoreboard: React.FC<Props> = ({ teams, seconds, bestOf, gamesWon }) => {
+const Scoreboard: React.FC<Props> = ({
+  teams,
+  seconds,
+  bestOf,
+  gamesWon,
+  isOT,
+}) => {
   let firstOf = 0;
 
   if (bestOf === 3) firstOf = 2;
@@ -47,7 +54,7 @@ const Scoreboard: React.FC<Props> = ({ teams, seconds, bestOf, gamesWon }) => {
           <div className="col-span-2 h-16 flex">
             <Card color="main" className="w-full">
               <p className="mx-auto font-semibold text-3xl">
-                {convertSeconds(seconds)}
+                {isOT && "+"}{convertSeconds(seconds)}
               </p>
             </Card>
           </div>
@@ -59,11 +66,13 @@ const Scoreboard: React.FC<Props> = ({ teams, seconds, bestOf, gamesWon }) => {
             </Card>
           </div>
         </div>
-        {/* <div>
-          <Card color="main" className="w-full h-16">
-            <p className="mx-auto font-semibold text-2xl">Dioscure Cup #</p>
-          </Card>
-        </div> */}
+        <div>
+          {isOT === true && (
+            <Card color="main" className="w-2/3 h-9 mx-auto opacity-90 animate-pulse">
+              <p className="mx-auto uppercase">Overtime</p>
+            </Card>
+          )}
+        </div>
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
         <Card color="orange" className="w-full h-16">

@@ -27,6 +27,7 @@ const usePrevious = <T extends unknown>(value: T): T | undefined => {
 function App() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [seconds, setSeconds] = useState<number>(0);
+  const [isOT, setIsOT] = useState<boolean>(false)
   const [targetPlayer, setTargetPlayer] = useState<Player | null>();
   const [lastGoal, setLastGoal] = useState<GoalScoredData>();
   const [bestOf, setBestOf] = useState<BestOf>(null);
@@ -82,6 +83,8 @@ function App() {
 
     if (data.data.game.target !== "")
       setTargetPlayer(data.data.players[data.data.game.target]);
+
+    setIsOT(data.data.game.isOT)
 
     if (data.data.game.isReplay) setGameStatus("replay");
     else setGameStatus("playing");
@@ -188,6 +191,8 @@ function App() {
       },
     ]);
 
+    player.last_event = event
+
     deleteLastEvent();
   }
 
@@ -195,6 +200,7 @@ function App() {
     if (gameStatus == "replay") return;
 
     if (!prevPlayers) return;
+
 
     for (const player of players) {
       const old_player = prevPlayers.find((p) => p.id === player.id);
@@ -210,6 +216,8 @@ function App() {
       if (player.assists > old_player.assists) addEvent(player, "assist");
 
       if (player.saves > old_player.saves) addEvent(player, "save");
+
+      player.last_event = old_player.last_event;
     }
   }, [players]);
 
@@ -223,7 +231,7 @@ function App() {
           bestOf={bestOf}
           gamesWon={gamesWon}
         />
-      )}
+      )} 
       {gameStatus !== "ended" && (
         <Main
           players={players}
@@ -235,6 +243,7 @@ function App() {
           bestOf={bestOf}
           gamesWon={gamesWon}
           playersStatus={playersStatus}
+          isOT={isOT}
         />
       )}
     </>
@@ -242,6 +251,3 @@ function App() {
 }
 
 export default App;
-function updateState(data: Data<any>): void {
-  throw new Error("Function not implemented.");
-}

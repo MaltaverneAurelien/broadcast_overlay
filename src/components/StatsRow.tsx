@@ -25,7 +25,7 @@ const StatsRow: React.FC<Props> = ({ keyStat, players }) => {
       </div>
       <div className="flex flex-col justify-center items-center gap-y-4 w-96 h-full px-3">
         <h2 className="text-2xl font-semibold uppercase">{keyStat}</h2>
-        <StatsBar keyStat={"score"} players={players} />
+        <StatsBar keyStat={keyStat} players={players} />
       </div>
       <div className="flex flex-grow h-full justify-around px-3 items-center">
         <Players team={1}/>

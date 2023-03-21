@@ -1,3 +1,5 @@
+import { StatusEvent } from "./playerStatus";
+
 export default interface UpdateStateData {
   event: string;
   game: Game;
@@ -68,6 +70,7 @@ export interface Player {
   speed: number;
   team: number;
   touches: number;
+  last_event?: StatusEvent;
 }
 
 export interface PlayerLocation {
