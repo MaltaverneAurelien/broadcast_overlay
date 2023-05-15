@@ -25,7 +25,7 @@ const StatsBar: React.FC<StatsBarProps> = ({ keyStat, players }) => {
   }
 
   return (
-    <div className="w-3/4 flex rounded overflow-hidden">
+    <div className="w-3/4 flex rounded overflow-hidden bg-gradient-to-r from-neutral-500 to-neutral-700">
       <div
         className={`h-1.5 m-auto bg-gradient-to-l to-blue-600 from-green-600`}
         style={{

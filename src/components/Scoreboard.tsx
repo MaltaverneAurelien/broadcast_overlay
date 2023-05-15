@@ -26,11 +26,15 @@ const Scoreboard: React.FC<Props> = ({
   else if (bestOf === 7) firstOf = 4;
 
   return (
-    <div className="grid grid-cols-12 gap-x-4 w-[64rem]">
+    <div className="grid grid-cols-12 gap-x-4 w-[74rem]">
+      
       <div className="col-span-4 flex flex-col gap-y-1">
-        <Card color="blue" className="w-full h-16">
-          <p className="mx-auto text-2xl font-semibold">{teams[0]?.name}</p>
-        </Card>
+        <div className="flex gap-x-1">
+          <Card color="blue" className="w-full h-16">
+            {/* <img className="rounded-full h-4/6 w-1/4 object-contain" src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f4/Fnatic-Logo-2020.svg/1200px-Fnatic-Logo-2020.svg.png"/> */}
+            <p className="text-2xl font-semibold mx-auto">{teams[0]?.name}</p>
+          </Card>
+        </div>
         <div className="flex flex-row-reverse gap-x-1 w-full">
           {[...Array(firstOf)].map((_, i) => (
             <Card
@@ -77,6 +81,7 @@ const Scoreboard: React.FC<Props> = ({
       <div className="col-span-4 flex flex-col gap-y-1">
         <Card color="orange" className="w-full h-16">
           <p className="mx-auto text-2xl font-semibold">{teams[1]?.name}</p>
+          {/* <img className="rounded-full h-4/6 w-1/4 object-contain" src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f4/Fnatic-Logo-2020.svg/1200px-Fnatic-Logo-2020.svg.png"/> */}
         </Card>
         <div className="flex gap-x-1 w-full">
           {[...Array(firstOf)].map((_, i) => (

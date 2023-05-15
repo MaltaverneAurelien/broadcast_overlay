@@ -70,7 +70,7 @@ const Players: React.FC<Props> = ({
             <div className="w-full">
               <div className="grid grid-cols-12 w-11/12 mx-auto">
                 <p className="text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap ">
-                  {p.name} {p.last_event}
+                  {p.name}
                 </p>
                 <p className="text-xl text-end font-semibold col-span-2">
                   {p.boost}
@@ -91,7 +91,9 @@ const Players: React.FC<Props> = ({
             }
           >
             <div className="w-full flex items-center justify-between px-4">
-              <span className="text-xl">{p.name}</span>
+              <span className="text-xl text-ellipsis overflow-hidden whitespace-nowrap pr-2 ">
+                {p.name}
+              </span>
               <div className="flex gap-x-4 items-center">
                 {getLastEvent(p).includes("demo") && (
                   <FontAwesomeIcon icon={faBomb} className="w-7 h-7" />
