@@ -113,5 +113,15 @@
     "name": "Uzopi",
     "aliases": ["Uzopi"],
     "filename": "Uzopi.png"
+  },
+  {
+    "name": "Xbox",
+    "aliases": ["Xbox One"],
+    "filename": "Xbox.png"
+  },
+  {
+    "name": "Playstation",
+    "aliases": ["PS5"],
+    "filename": "Playstation.png"
   }
 ]
