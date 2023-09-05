@@ -58,14 +58,14 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
               </div>
             )}
 
-            {player.goals > 1 && (
+            {/*{player.goals > 1 && (
               <div className="flex flex-col items-center gap-y-1.5">
                 <FontAwesomeIcon icon={faBullseye} className="w-8 h-8 " />
                 <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
                   {player.goals} buts
                 </span>
               </div>
-            )}
+            )} */}
 
             <div className="flex flex-col items-center gap-y-1.5">
               <FontAwesomeIcon icon={faMeteor} className="w-8 h-8" />
