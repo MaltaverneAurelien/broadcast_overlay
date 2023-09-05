@@ -48,8 +48,6 @@ function App() {
   const bestOfRef = useRef<BestOf>(null);
   bestOfRef.current = bestOf;
 
-  // TODO: Voir comment fonctionne l'overtime, changer l'affichage du temps en fonction de l'overtime
-
   const events: Events = {
     "game:update_state": updateState,
     "game:goal_scored": goalScored,
