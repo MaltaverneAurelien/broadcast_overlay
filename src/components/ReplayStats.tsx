@@ -9,6 +9,7 @@ import {
   faHandshakeAngle,
   faMeteor,
   faStopwatch,
+  faBullseye
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -53,6 +54,15 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
                 <FontAwesomeIcon icon={faHandshakeAngle} className="w-8 h-8 " />
                 <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
                   {lastGoal?.assister.name}
+                </span>
+              </div>
+            )}
+
+            {player.goals > 1 && (
+              <div className="flex flex-col items-center gap-y-1.5">
+                <FontAwesomeIcon icon={faBullseye} className="w-8 h-8 " />
+                <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
+                  {player.goals} buts
                 </span>
               </div>
             )}
