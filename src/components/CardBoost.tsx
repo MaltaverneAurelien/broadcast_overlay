@@ -13,7 +13,7 @@ const CardBoost: React.FC<Props> = ({ color, boost }) => {
       <div
         className={`flex bottom-0 left-0 h-1 transition-all duration-300 bg-gradient-to-r rounded-full ${getColorClasses(
           color
-        )} ${getRotationClass(color)}`}
+          )} ${getRotationClass(color)}`}
         style={{
           width: `${boost}%`,
         }}

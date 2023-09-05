@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "Scald Horizon",
+    "aliases": ["Scald Esport"],
+    "filename": "Scald_Horizon.png"
+  },
+  {
+    "name": "Biju Esport",
+    "aliases": ["Biju Esport"],
+    "filename": "Biju_Esport.png"
+  },
+  {
+    "name": "Cicadas Gaming",
+    "aliases": ["Cicadas Gaming"],
+    "filename": "Cicadas_Gaming.png"
+  },
+  {
+    "name": "D3 Esport",
+    "aliases": ["D3 Esport"],
+    "filename": "D3_Esport.png"
+  },
+  {
+    "name": "PerfLine Esport",
+    "aliases": ["PerfLine"],
+    "filename": "PerfLine_Esport.png"
+  },
+  {
+    "name": "Tengu Esport",
+    "aliases": ["Tengu Esport"],
+    "filename": "Tengu_Esport.png"
+  },
+  {
+    "name": "TFM Esport",
+    "aliases": ["TFM Esports"],
+    "filename": "TFM_Esport.png"
+  },
+  {
+    "name": "TLF Esport",
+    "aliases": ["TahLesFous"],
+    "filename": "TLF_Esport.png"
+  },
+  {
+    "name": "Fraag Esport",
+    "aliases": ["Fraag"],
+    "filename": "Fraag_Esport.png"
+  },
+  {
+    "name": "Moist UWU",
+    "aliases": ["Moist Esport"],
+    "filename": "Moist_UWU.png"
+  },
+  {
+    "name": "NTHX Esport",
+    "aliases": ["NTHX Esport Rouge"],
+    "filename": "NTHX_Esport.png"
+  },
+  {
+    "name": "Owned Esport",
+    "aliases": ["Owned"],
+    "filename": "Owned.png"
+  },
+  {
+    "name": "RedWing Esport",
+    "aliases": ["RedWing eSport"],
+    "filename": "RedWing_eSport.png"
+  },
+  {
+    "name": "Rocket TV",
+    "aliases": ["RTV"],
+    "filename": "Rocket_TV.png"
+  },
+  {
+    "name": "Team Deter",
+    "aliases": ["Deter Esport"],
+    "filename": "Team_Deter.png"
+  },
+  {
+    "name": "USM Esport",
+    "aliases": ["USM eSport"],
+    "filename": "USM_eSport.png"
+  },
+  {
+    "name": "Vyzion Esport",
+    "aliases": ["Vyzion Esport White"],
+    "filename": "Vyzion_Esport_Black.png"
+  },
+  {
+    "name": "MC Donald",
+    "aliases": ["MC Donlad"],
+    "filename": "MC_Donald.png"
+  },
+  {
+    "name": "Burger King",
+    "aliases": ["Burger King"],
+    "filename": "Burger_King.png"
+  },
+  {
+    "name": "Kebab",
+    "aliases": ["Kebab"],
+    "filename": "Kebab.png"
+  },
+  {
+    "name": "Tacos",
+    "aliases": ["Tacos"],
+    "filename": "Tacos.png"
+  },
+  {
+    "name": "Dioscure",
+    "aliases": ["Dioscure"],
+    "filename": "Dioscure.png"
+  },
+  {
+    "name": "Uzopi",
+    "aliases": ["Uzopi"],
+    "filename": "Uzopi.png"
+  },
+  {
+    "name": "Xbox",
+    "aliases": ["Xbox One"],
+    "filename": "Xbox.png"
+  },
+  {
+    "name": "Playstation",
+    "aliases": ["PS5"],
+    "filename": "Playstation.png"
+  },
+  {
+    "name": "FC Mezon",
+    "aliases": ["Mezon Esport"],
+    "filename": "FC_Mezon.png"
+  },
+  {
+    "name": "TSK Heimdall",
+    "aliases": ["TSK Esport"],
+    "filename": "TSK_Esport.png"
+  },
+  {
+    "name": "TSK Vidar",
+    "aliases": ["TSK"],
+    "filename": "TSK_Esport.png"
+  },
+  {
+    "name": "Niza Esport",
+    "aliases": ["Niza Esports"],
+    "filename": "Niza_Esport.png"
+  },
+  {
+    "name": "Team FSGS",
+    "aliases": ["FSGS"],
+    "filename": "Team_FSGS.png"
+  },
+  {
+    "name": "Hiver",
+    "aliases": ["Winter"],
+    "filename": "Hiver.png"
+  },
+  {
+    "name": "Ete",
+    "aliases": ["Summer"],
+    "filename": "Ete.png"
+  },
+  {
+    "name": "Tartiflette",
+    "aliases": ["Tartiflette"],
+    "filename": "Tartiflette.png"
+  },
+  {
+    "name": "Raclette",
+    "aliases": ["Raclette"],
+    "filename": "Raclette.png"
+  },
+  {
+    "name": "Vace Esport",
+    "aliases": ["Vace Esports"],
+    "filename": "Vace_Esport.png"
+  },
+  {
+    "name": "Oryx Esport",
+    "aliases": ["Oryx Esports"],
+    "filename": "Oryx_Esport.png"
+  },
+  {
+    "name": "Eternity Games",
+    "aliases": ["EternityGames"],
+    "filename": "Eternity_Games.png"
+  },
+  {
+    "name": "Infinity Impact",
+    "aliases": ["InfinityImpact"],
+    "filename": "Infinity_impact.png"
+  },
+  {
+    "name": "Coca Cola",
+    "aliases": ["Coca"],
+    "filename": "Coca_Cola.png"
+  },
+  {
+    "name": "Orangina",
+    "aliases": ["Orangina"],
+    "filename": "Orangina.png"
+  },
+  {
+    "name": "Cookies",
+    "aliases": ["Cookie"],
+    "filename": "Cookies.png"
+  },
+  {
+    "name": "Donuts",
+    "aliases": ["Donut"],
+    "filename": "Donuts.png"
+  },
+  {
+    "name": "Fuze Tea",
+    "aliases": ["Fuze Tea"],
+    "filename": "Fuze_Tea.png"
+  },
+  {
+    "name": "Ice Tea",
+    "aliases": ["Ice Tea"],
+    "filename": "Ice_Tea.png"
+  },
+  {
+    "name": "Eclipsar Esport",
+    "aliases": ["Eclipsar Esports"],
+    "filename": "Eclipsar_Esport.png"
+  },
+  {
+    "name": "24 Confrerie du sel",
+    "aliases": ["24 Confrerie du sel"],
+    "filename": "24_Confrerie_du_sel.png"
+  },
+  {
+    "name": "ALED!",
+    "aliases": ["Aled"],
+    "filename": "Aled.png"
+  },
+  {
+    "name": "ARM7",
+    "aliases": ["ARM7"],
+    "filename": "ARM7.png"
+  },
+  {
+    "name": "Arrakis",
+    "aliases": ["ARRAKIS"],
+    "filename": "Arrakis.png"
+  },
+  {
+    "name": "Axinite",
+    "aliases": ["Axinite"],
+    "filename": "Axinite.png"
+  },
+  {
+    "name": "B One",
+    "aliases": ["B.One"],
+    "filename": "B_One.png"
+  },
+  {
+    "name": "Broken",
+    "aliases": ["Broken"],
+    "filename": "Broken.png"
+  },
+  {
+    "name": "Calciobird",
+    "aliases": ["Calciobird Esport"],
+    "filename": "Calciobird_Esport.png"
+  },
+  {
+    "name": "Darwyn Esport",
+    "aliases": ["Darwyn Esports"],
+    "filename": "Darwyn_Esport.png"
+  },
+  {
+    "name": "Saturlity",
+    "aliases": ["Saturlity"],
+    "filename": "Saturlity.png"
+  },
+  {
+    "name": "Ethernia Esport",
+    "aliases": ["Ethernia Esports"],
+    "filename": "Ethernia_Esport.png"
+  },
+  {
+    "name": "Deep Verte",
+    "aliases": ["Deep Verte"],
+    "filename": "Deep_Verte.png"
+  },
+  {
+    "name": "EAFI",
+    "aliases": ["EAFI"],
+    "filename": "EAFI.png"
+  },
+  {
+    "name": "Echten Esport",
+    "aliases": ["Echten Esports"],
+    "filename": "Echten_Esport.png"
+  },
+  {
+    "name": "Equinoxe Esport",
+    "aliases": ["Equinoxe"],
+    "filename": "Equinox_Esport.png"
+  },
+  {
+    "name": "Evyl Hope",
+    "aliases": ["Evyl Hope"],
+    "filename": "Evyl_Hope.png"
+  },
+  {
+    "name": "Evyl Origin",
+    "aliases": ["Evyl Origin"],
+    "filename": "Evyl_Origin.png"
+  },
+  {
+    "name": "GKR",
+    "aliases": ["GKR Esport"],
+    "filename": "GKR.png"
+  },
+  {
+    "name": "Frenesey 022",
+    "aliases": ["Frenesey"],
+    "filename": "Frenesey_022.png"
+  },
+  {
+    "name": "Greenstar",
+    "aliases": ["Greenstar, Greenstar"],
+    "filename": "Greenstar_Esport.png"
+  },
+  {
+    "name": "The Older Flop",
+    "aliases": ["The Older Flop"],
+    "filename": "The_Olders_Flop.png"
+  },
+  {
+    "name": "TRBB",
+    "aliases": ["TRBB"],
+    "filename": "TRBB.png"
+  },
+  {
+    "name": "Oreo",
+    "aliases": ["Oreo"],
+    "filename": "Oreo.png"
+  },
+  {
+    "name": "Grind Hard",
+    "aliases": ["Grind Hard"],
+    "filename": "Grind_Hard.png"
+  },
+  {
+    "name": "Haste",
+    "aliases": ["Haste"],
+    "filename": "Haste.png"
+  },
+  {
+    "name": "Hollow Knights",
+    "aliases": ["Hollow Knights"],
+    "filename": "Hollow_Knights.png"
+  },
+  {
+    "name": "Honary",
+    "aliases": ["Honary"],
+    "filename": "Honary.png"
+  },
+  {
+    "name": "Granola",
+    "aliases": ["Granola"],
+    "filename": "Granola.png"
+  },
+  {
+    "name": "Imperious",
+    "aliases": ["Imperious"],
+    "filename": "Imperious.png"
+  },
+  {
+    "name": "ISG",
+    "aliases": ["ISG"],
+    "filename": "ISG.png"
+  },
+  {
+    "name": "K7",
+    "aliases": ["K7"],
+    "filename": "K7.png"
+  },
+  {
+    "name": "Larasba Esport",
+    "aliases": ["Larasba Esports"],
+    "filename": "Larasba_Esport.png"
+  },
+  {
+    "name": "Les ZEU",
+    "aliases": ["Les ZEU"],
+    "filename": "Les_ZEU.png"
+  },
+  {
+    "name": "MGA",
+    "aliases": ["MGA"],
+    "filename": "MGA.png"
+  },
+  {
+    "name": "MNLY Crew",
+    "aliases": ["MNLY Crew"],
+    "filename": "MNLY_Crew.png"
+  },
+  {
+    "name": "Mulhouse Gaming",
+    "aliases": ["Mulhouse Gaming"],
+    "filename": "Mulhouse_Gaming.png"
+  },
+  {
+    "name": "Nokturn Esport",
+    "aliases": ["Nokturn Esports"],
+    "filename": "Nokturn_Esport.png"
+  },
+  {
+    "name": "NTHX",
+    "aliases": ["NTHX"],
+    "filename": "NTHX.png"
+  },
+  {
+    "name": "Rakusan Esport",
+    "aliases": ["Rakusan Esports"],
+    "filename": "Rakusan_Esport.png"
+  },
+  {
+    "name": "RGE",
+    "aliases": ["Radio Gaming Esport"],
+    "filename": "RGE.png"
+  },
+  {
+    "name": "Nelesta Orange",
+    "aliases": ["Nelesta Orange"],
+    "filename": "Nelesta_Orange.png"
+  },
+  {
+    "name": "SPM",
+    "aliases": ["SPM Solar"],
+    "filename": "SPM.png"
+  },
+  {
+    "name": "Rigel",
+    "aliases": ["Rigel Esport"],
+    "filename": "Rigel.png"
+  },
+  {
+    "name": "Riijky Corp",
+    "aliases": ["Riijky Corp"],
+    "filename": "Riijky_Corp.png"
+  },
+  {
+    "name": "Nelesta Red",
+    "aliases": ["Nelesta Red"],
+    "filename": "Nelesta_Red.png"
+  },
+  {
+    "name": "Onorst Esport",
+    "aliases": ["Onorst Esports"],
+    "filename": "Onorst_Esport.png"
+  },
+  {
+    "name": "Princesses",
+    "aliases": ["Princesses"],
+    "filename": "Princesses.png"
+  },
+  {
+    "name": "SOG Hades",
+    "aliases": ["Sog Hades"],
+    "filename": "Sog_Hades.png"
+  },
+  {
+    "name": "TFM Thorium",
+    "aliases": ["TFM Thorium"],
+    "filename": "TFM_Thorium.png"
+  },
+  {
+    "name": "Bromance",
+    "aliases": ["Bromance"],
+    "filename": "Bromance.png"
+  },
+  {
+    "name": "Just Chilling",
+    "aliases": ["Just-Chilling"],
+    "filename": "Just_Chilling.png"
+  },
+  {
+    "name": "Wake Up",
+    "aliases": ["WakeUp"],
+    "filename": "Wake_Up.png"
+  },
+  {
+    "name": "Rysing Squad",
+    "aliases": ["Rysing Squad"],
+    "filename": "Rysing_Squad.png"
+  },
+  {
+    "name": "Ice Horde",
+    "aliases": ["Ice Horde"],
+    "filename": "Ice_Horde.png"
+  },
+  {
+    "name": "Acid Esports",
+    "aliases": ["Acid Esport"],
+    "filename": "Acid_Esports.png"
+  },
+  {
+    "name": "For The Win Evolution",
+    "aliases": ["FTW Evolution"],
+    "filename": "For_The_Win_Evolution.png"
+  },
+  {
+    "name": "New Edge Esports",
+    "aliases": ["New Edge Esport"],
+    "filename": "New_Edge_Esports.png"
+  },
+  {
+    "name": "DHE Esport",
+    "aliases": ["Dark Heaven Esports"],
+    "filename": "DHE_Esport.png"
+  },
+  {
+    "name": "Solis Rising",
+    "aliases": ["Solis Rising Esport"],
+    "filename": "Solis_Rising.png"
+  },
+  {
+    "name": "Team HSD",
+    "aliases": ["Team HSD"],
+    "filename": "Team_HSD.png"
+  },
+  {
+    "name": "TTC Prodige",
+    "aliases": ["TTC"],
+    "filename": "TTC_Prodige.png"
+  },
+  {
+    "name": "T2S Esport",
+    "aliases": ["T2S Esports"],
+    "filename": "T2S_Esport.png"
+  },
+  {
+    "name": "TS4 Esport",
+    "aliases": ["S4 Esports"],
+    "filename": "TS4_Esport.png"
+  },
+  {
+    "name": "Veloxia",
+    "aliases": ["Veloxia Venus, Veloxia Jupiter"],
+    "filename": "Veloxia.png"
+  },
+  {
+    "name": "Zephyr Esport",
+    "aliases": ["Zephyr Esports"],
+    "filename": "Zephyr_Esport.png"
+  },
+  {
+    "name": "Brest Esport",
+    "aliases": ["ECB"],
+    "filename": "Esport_Club_Brest.png"
+  },
+  {
+    "name": "French Amigos",
+    "aliases": ["French Amigos"],
+    "filename": "French_Amigos.png"
+  },
+  {
+    "name": "Xperiency",
+    "aliases": ["Xperiency"],
+    "filename": "Xperiency.png"
+  },
+  {
+    "name": "Pepsi",
+    "aliases": ["Pepsi"],
+    "filename": "Pepsi.png"
+  },
+  {
+    "name": "Ultra Delta",
+    "aliases": ["Ultra Esport"],
+    "filename": "Ultra_Delta.png"
+  },
+  {
+    "name": "NTRS Vipere",
+    "aliases": ["NTRS Cobra"],
+    "filename": "NTRS_Esport.png"
+  },
+  {
+    "name": "AMD",
+    "aliases": ["Amd"],
+    "filename": "AMD.png"
+  },
+  {
+    "name": "Intel",
+    "aliases": ["intel"],
+    "filename": "Intel.png"
+  },
+  {
+    "name": "Kinder",
+    "aliases": ["KINDER"],
+    "filename": "Kinder.png"
+  },
+  {
+    "name": "Milka",
+    "aliases": ["MILKA"],
+    "filename": "Milka.png"
+  },
+  {
+    "name": "Lego",
+    "aliases": ["LEGO"],
+    "filename": "Lego.png"
+  },
+  {
+    "name": "Playmobile",
+    "aliases": ["PLAYMOBILE"],
+    "filename": "Playmobile.png"
+  },
+  {
+    "name": "Daryx",
+    "aliases": ["Daryxos"],
+    "filename": "Daryxos.png"
+  },
+  {
+    "name": "Zen",
+    "aliases": ["ZEN"],
+    "filename": "Zen.png"
+  },
+  {
+    "name": "Vatira",
+    "aliases": ["VATIRA"],
+    "filename": "Vatira.png"
+  },
+  {
+    "name": "Empire",
+    "aliases": ["Empire"],
+    "filename": "Empire.png"
+  },
+  {
+    "name": "Nexus",
+    "aliases": ["Nexus Hope, Nexus Esport"],
+    "filename": "Nexus_Esport.png"
+  },
+  {
+    "name": "LCE BLEU",
+    "aliases": ["LCE"],
+    "filename": "LCE_Blue.png"
+  },
+  {
+    "name": "LCE BLANC",
+    "aliases": ["LCE"],
+    "filename": "LCE_Blanc.png"
+  },
+  {
+    "name": "LCE ROUGE",
+    "aliases": ["LCE"],
+    "filename": "LCE_Rouge.png"
+  },
+  {
+    "name": "Veridict Esport",
+    "aliases": ["Veridict"],
+    "filename": "Veridict_Esport.png"
+  },
+  {
+    "name": "Astaroth Esport",
+    "aliases": ["Astaroth Esports"],
+    "filename": "Astaroth_Esport.png"
+  },
+  {
+    "name": "Zing Zone",
+    "aliases": ["ZingZone"],
+    "filename": "Zing_Zone.png"
+  },
+  {
+    "name": "La Saliere",
+    "aliases": ["LaSaliere"],
+    "filename": "La_Saliere.png"
+  },
+  {
+    "name": "Weld Reborn",
+    "aliases": ["WeldReborn"],
+    "filename": "Weld_Reborn.png"
+  },
+  {
+    "name": "OveReign",
+    "aliases": ["Overeign Esport"],
+    "filename": "OveReign.png"
+  },
+  {
+    "name": "Deluxxe Emeraude",
+    "aliases": ["Deluxxe Esport, Deluxxe"],
+    "filename": "Deluxxe_Emeraude.png"
+  },
+  {
+    "name": "Digity Esport",
+    "aliases": ["Digity"],
+    "filename": "Digity_Esport.png"
+  },
+  {
+    "name": "Miyagido",
+    "aliases": ["Miyagi-do"],
+    "filename": "Miyagi-Do.png"
+  },
+  {
+    "name": "Les Copaings",
+    "aliases": ["Les Copaings"],
+    "filename": "Les_copaings.png"
+  },
+  {
+    "name": "Gostfild Esport",
+    "aliases": ["Gostfild"],
+    "filename": "Gostfild_Esport.png"
+  },
+  {
+    "name": "Newd eSport",
+    "aliases": ["Newd Esport"],
+    "filename": "Newd_Esport.png"
+  },
+  {
+    "name": "SniR E-Sport",
+    "aliases": ["Snir Esport"],
+    "filename": "Snir_Esport.png"
+  },
+  {
+    "name": "GhostWhite",
+    "aliases": ["GhostWhite Alpha"],
+    "filename": "Ghostwhite.png"
+  },
+  {
+    "name": "Dortmund Esports",
+    "aliases": ["Dortmund Esport"],
+    "filename": "Dortmund_Esports.png"
+  },
+  {
+    "name": "Ghost Inferno",
+    "aliases": ["Ghost Inferno"],
+    "filename": "Ghost_Inferno.png"
+  },
+  {
+    "name": "Icare Esport",
+    "aliases": ["Icare Esport Hades"],
+    "filename": "Icare_Esport.png"
+  },
+  {
+    "name": "Team GX",
+    "aliases": ["GX Esport"],
+    "filename": "Team_GX.png"
+  },
+  {
+    "name": "Fennex Esport",
+    "aliases": ["Fennex Esports"],
+    "filename": "Fennex_Esport.png"
+  },
+  {
+    "name": "Sentinel",
+    "aliases": ["Sentinel Esport"],
+    "filename": "Sentinel.png"
+  },
+  {
+    "name": "Golden Warriors",
+    "aliases": ["Golden Warriors Noir"],
+    "filename": "Golden_Warriors.png"
+  },
+  {
+    "name": "Golden Warriors Vert",
+    "aliases": ["Golden Warriors Vert"],
+    "filename": "Golden_Warriors_Vert.png"
+  },
+  {
+    "name": "Azul",
+    "aliases": ["Azul"],
+    "filename": "Azul.png"
+  },
+  {
+    "name": "Enisorail",
+    "aliases": ["Enisorail Esport"],
+    "filename": "Enisorail.png"
+  },
+  {
+    "name": "Fight For Ever",
+    "aliases": ["Fight For Ever"],
+    "filename": "Fight_For_Ever.png"
+  },
+  {
+    "name": "Fraudes",
+    "aliases": ["Fraudes"],
+    "filename": "Fraudes.png"
+  },
+  {
+    "name": "Julien Beats",
+    "aliases": ["Julien Beats"],
+    "filename": "Julien_Beats.png"
+  },
+  {
+    "name": "Kyodo Esport",
+    "aliases": ["Kyodo Esport"],
+    "filename": "Kyodo_Esport.png"
+  },
+  {
+    "name": "Manshine City",
+    "aliases": ["Manshine City"],
+    "filename": "Manshine_City.png"
+  },
+  {
+    "name": "Monclizzy FC",
+    "aliases": ["Monclizzy FC"],
+    "filename": "Monclizzy_FC.png"
+  },
+  {
+    "name": "Nemesis",
+    "aliases": ["Nemesis"],
+    "filename": "Nemesis.png"
+  },
+  {
+    "name": "Notorious Esport",
+    "aliases": ["Notorious Esport"],
+    "filename": "Notorious_Esport.png"
+  },
+  {
+    "name": "NS Esport",
+    "aliases": ["NS Esport"],
+    "filename": "NS_Esport.png"
+  },
+  {
+    "name": "Patata Speed",
+    "aliases": ["Patata Speed"],
+    "filename": "Patata_Speed.png"
+  },
+  {
+    "name": "Resurgence Corp",
+    "aliases": ["Resurgence Corp"],
+    "filename": "Resurgence_Corp.png"
+  },
+  {
+    "name": "Sentient Esport",
+    "aliases": ["Sentient Esport"],
+    "filename": "Sentient_Esport.png"
+  },
+  {
+    "name": "Sigma Boyz",
+    "aliases": ["Sigma Boyz"],
+    "filename": "Sigma_Boyz.png"
+  },
+  {
+    "name": "Souls Onyx",
+    "aliases": ["Souls Onyx"],
+    "filename": "Souls_Onyx.png"
+  },
+  {
+    "name": "Stay First Esport",
+    "aliases": ["Stay First Esport"],
+    "filename": "Stay_First_Esport.png"
+  },
+  {
+    "name": "STP MESSI",
+    "aliases": ["STP MESSI"],
+    "filename": "STP_MESSI.png"
+  },
+  {
+    "name": "The French Baguette",
+    "aliases": ["The French Baguette"],
+    "filename": "The_French_Baguette.png"
+  },
+  {
+    "name": "Valoria",
+    "aliases": ["Valoria"],
+    "filename": "Valoria.png"
+  },
+  {
+    "name": "Violet",
+    "aliases": ["Violet"],
+    "filename": "Violet.png"
+  },
+  {
+    "name": "Washed Up Boys",
+    "aliases": ["Washed Up Boys"],
+    "filename": "Washed_Up_Boys.png"
+  },
+  {
+    "name": "Xeno Eternal",
+    "aliases": ["Xeno Eternal"],
+    "filename": "Xeno_Eternal.png"
+  },
+  {
+    "name": "Ananas Gang",
+    "aliases": ["Ananas Gang"],
+    "filename": "Ananas_Gang.png"
+  },
+  {
+    "name": "Scald Azur",
+    "aliases": ["Scald Azur"],
+    "filename": "Scald.png"
+  },
+  {
+    "name": "Scald Navy",
+    "aliases": ["Scald Navy"],
+    "filename": "Scald.png"
+  },
+  {
+    "name": "Cosmo Esports",
+    "aliases": ["Cosmo Esport"],
+    "filename": "Cosmo_Esports.png"
+  },
+  {
+    "name": "FLC Esport",
+    "aliases": ["FLC Esports"],
+    "filename": "FLC_Esport.png"
+  },
+  {
+    "name": "New Generation Faim",
+    "aliases": ["NewGenerationFaim"],
+    "filename": "NewGenerationFaim.png"
+  },
+  {
+    "name": "Nitro Surge",
+    "aliases": ["NitroSurge"],
+    "filename": "Nitro_Surge.png"
+  },
+  {
+    "name": "Olympe Esport",
+    "aliases": ["Olympe Hades"],
+    "filename": "Olympe_Esport.png"
+  },
+  {
+    "name": "Paps Esport",
+    "aliases": ["Paps Esports"],
+    "filename": "Paps_esport.png"
+  },
+  {
+    "name": "Monster",
+    "aliases": ["Monster"],
+    "filename": "Monster.png"
+  },
+  {
+    "name": "Redbull",
+    "aliases": ["Redbull"],
+    "filename": "Redbull.png"
+  },
+  {
+    "name": "Goud Guys",
+    "aliases": ["Good Guys"],
+    "filename": "Goud_guys.png"
+  },
+  {
+    "name": "NLS Blue",
+    "aliases": ["NLS"],
+    "filename": "NLS_blue.png"
+  },
+  {
+    "name": "Team Lystral",
+    "aliases": ["Lystral Esport"],
+    "filename": "Team_Lystral.png"
+  },
+  {
+    "name": "x9 Alpha",
+    "aliases": ["x9Alpha"],
+    "filename": "x9_alpha.png"
+  },
+  {
+    "name": "Obscura",
+    "aliases": ["Team DID"],
+    "filename": "Team_DID.png"
+  },
+  {
+    "name": "Daylight ESC",
+    "aliases": ["Daylight"],
+    "filename": "Daylight_ESC.png"
+  },
+  {
+    "name": "Lunar",
+    "aliases": ["Lunar Esport"],
+    "filename": "Lunar.png"
+  },
+  {
+    "name": "Nightwolves Eclipse",
+    "aliases": ["Nightwolves"],
+    "filename": "Nightwolves_eclipse.png"
+  },
+  {
+    "name": "Allo",
+    "aliases": ["Allo Esport"],
+    "filename": "Allo.png"
+  },
+  {
+    "name": "Infinity",
+    "aliases": ["Team DID"],
+    "filename": "Team_DID.png"
+  },
+  {
+    "name": "Cold Ballers",
+    "aliases": ["ColdBallers"],
+    "filename": "cold_ballers.png"
+  },
+  {
+    "name": "La 4L",
+    "aliases": ["La 4l"],
+    "filename": "La_4l.png"
+  },
+  {
+    "name": "Tumple Light",
+    "aliases": ["TumpleLight"],
+    "filename": "tumple_light.png"
+  },
+  {
+    "name": "ILLIT",
+    "aliases": ["Illit"],
+    "filename": "ILLIT.png"
+  },
+  {
+    "name": "Team Divergentes",
+    "aliases": ["Divergentes"],
+    "filename": "Team_Divergentes.png"
+  },
+  {
+    "name": "Minesty",
+    "aliases": ["minesty"],
+    "filename": "minesty.png"
+  },
+  {
+    "name": "Radon",
+    "aliases": ["radon"],
+    "filename": "radon.png"
+  },
+  {
+    "name": "Nytrix Esport",
+    "aliases": ["Nytrix"],
+    "filename": "nytrix_esport.png"
+  },
+  {
+    "name": "Evyl Epsilon",
+    "aliases": ["EvylEpsilon"],
+    "filename": "evyl_epsilon.png"
+  },
+  {
+    "name": "Zeepichass",
+    "aliases": ["Pipiche"],
+    "filename": "Pipiche.png"
+  },
+  {
+    "name": "Karmine",
+    "aliases": ["Karmine Corp"],
+    "filename": "Karmine_Corp.png"
+  },
+  {
+    "name": "Falcons",
+    "aliases": ["Falcons"],
+    "filename": "Falcons.png"
+  }
+]

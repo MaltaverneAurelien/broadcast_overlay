@@ -17,7 +17,7 @@ const Transition: React.FC<Props> = ({ play }) => {
         id="bgVideo"
         preload="true"
         ref={ref}
-        className="absolute z-10"
+        className="absolute z-50"
       >
         <source src={transition} type="video/mp4" />
       </video>
