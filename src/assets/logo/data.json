@@ -123,5 +123,15 @@
     "name": "Playstation",
     "aliases": ["PS5"],
     "filename": "Playstation.png"
+  },
+  {
+    "name": "FC Mezon",
+    "aliases": ["Mezon Esport"],
+    "filename": "FC_Mezon.png"
+  },
+  {
+    "name": "TSK Esport",
+    "aliases": ["TSK Ligue"],
+    "filename": "TSK_Esport.png"
   }
 ]
