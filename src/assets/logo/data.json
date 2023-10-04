@@ -163,5 +163,15 @@
     "name": "Raclette",
     "aliases": ["Raclette"],
     "filename": "Raclette.png"
+  },
+  {
+    "name": "Vace Esport",
+    "aliases": ["Vace Esports"],
+    "filename": "Vace_Esport.png"
+  },
+  {
+    "name": "Oryx Esport",
+    "aliases": ["Oryx Esports"],
+    "filename": "Oryx_Esport.png"
   }
 ]
