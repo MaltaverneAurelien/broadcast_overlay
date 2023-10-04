@@ -133,5 +133,15 @@
     "name": "TSK Esport",
     "aliases": ["TSK Ligue"],
     "filename": "TSK_Esport.png"
+  },
+  {
+    "name": "Niza Esport",
+    "aliases": ["Niza Esports"],
+    "filename": "Niza_Esport.png"
+  },
+  {
+    "name": "Team FSGS",
+    "aliases": ["FSGS"],
+    "filename": "Team_FSGS.png"
   }
 ]
