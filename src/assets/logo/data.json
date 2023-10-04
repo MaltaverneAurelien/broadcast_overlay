@@ -143,5 +143,25 @@
     "name": "Team FSGS",
     "aliases": ["FSGS"],
     "filename": "Team_FSGS.png"
+  },
+  {
+    "name": "Hiver",
+    "aliases": ["Winter"],
+    "filename": "Hiver.png"
+  },
+  {
+    "name": "Ete",
+    "aliases": ["Summer"],
+    "filename": "Ete.png"
+  },
+  {
+    "name": "Tartiflette",
+    "aliases": ["Tartiflette"],
+    "filename": "Tartiflette.png"
+  },
+  {
+    "name": "Raclette",
+    "aliases": ["Raclette"],
+    "filename": "Raclette.png"
   }
 ]
