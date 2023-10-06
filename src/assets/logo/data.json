@@ -213,5 +213,10 @@
     "name": "Ice Tea",
     "aliases": ["Ice Tea"],
     "filename": "Ice_Tea.png"
+  },
+  {
+    "name": "Eclipsar Esport",
+    "aliases": ["Eclipsar Esports"],
+    "filename": "Eclipsar_Esport.png"
   }
 ]
