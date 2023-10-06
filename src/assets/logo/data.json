@@ -173,5 +173,15 @@
     "name": "Oryx Esport",
     "aliases": ["Oryx Esports"],
     "filename": "Oryx_Esport.png"
+  },
+  {
+    "name": "Eternity Games",
+    "aliases": ["EternityGames"],
+    "filename": "Eternity_Games.png"
+  },
+  {
+    "name": "Infinity Impact",
+    "aliases": ["InfinityImpact"],
+    "filename": "Infinity_impact.png"
   }
 ]
