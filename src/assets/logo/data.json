@@ -183,5 +183,35 @@
     "name": "Infinity Impact",
     "aliases": ["InfinityImpact"],
     "filename": "Infinity_impact.png"
+  },
+  {
+    "name": "Coca Cola",
+    "aliases": ["Coca"],
+    "filename": "Coca_Cola.png"
+  },
+  {
+    "name": "Orangina",
+    "aliases": ["Orangina"],
+    "filename": "Orangina.png"
+  },
+  {
+    "name": "Cookies",
+    "aliases": ["Cookie"],
+    "filename": "Cookies.png"
+  },
+  {
+    "name": "Donuts",
+    "aliases": ["Donut"],
+    "filename": "Donuts.png"
+  },
+  {
+    "name": "Fuze Tea",
+    "aliases": ["Fuze Tea"],
+    "filename": "Fuze_Tea.png"
+  },
+  {
+    "name": "Ice Tea",
+    "aliases": ["Ice Tea"],
+    "filename": "Ice_Tea.png"
   }
 ]
