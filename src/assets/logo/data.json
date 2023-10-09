@@ -218,5 +218,50 @@
     "name": "Eclipsar Esport",
     "aliases": ["Eclipsar Esports"],
     "filename": "Eclipsar_Esport.png"
+  },
+  {
+    "name": "24 Confrerie du sel",
+    "aliases": ["24 Confrerie du sel"],
+    "filename": "24_Confrerie_du_sel.png"
+  },
+  {
+    "name": "ALED!",
+    "aliases": ["Aled"],
+    "filename": "Aled.png"
+  },
+  {
+    "name": "ARM7",
+    "aliases": ["ARM7"],
+    "filename": "ARM7.png"
+  },
+  {
+    "name": "Arrakis",
+    "aliases": ["ARRAKIS"],
+    "filename": "Arrakis.png"
+  },
+  {
+    "name": "Axinite",
+    "aliases": ["Axinite"],
+    "filename": "Axinite.png"
+  },
+  {
+    "name": "B One",
+    "aliases": ["B.One"],
+    "filename": "B_One.png"
+  },
+  {
+    "name": "Broken",
+    "aliases": ["Broken"],
+    "filename": "Broken.png"
+  },
+  {
+    "name": "Calciobird Esport",
+    "aliases": ["Calciobird Esports"],
+    "filename": "Calciobird_Esport.png"
+  },
+  {
+    "name": "Darwyn Esport",
+    "aliases": ["Darwyn Esport"],
+    "filename": "Darwyn_Esport.png"
   }
 ]
