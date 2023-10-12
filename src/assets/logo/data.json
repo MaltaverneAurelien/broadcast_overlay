@@ -261,12 +261,42 @@
   },
   {
     "name": "Darwyn Esport",
-    "aliases": ["Darwyn Esport"],
+    "aliases": ["Darwyn Esports"],
     "filename": "Darwyn_Esport.png"
   },
   {
     "name": "Saturlity",
     "aliases": ["Saturlity"],
     "filename": "Saturlity.png"
+  },
+  {
+    "name": "Ethernia Esport",
+    "aliases": ["Ethernia Esports"],
+    "filename": "Ethernia_Esport.png"
+  },
+  {
+    "name": "Deep Verte",
+    "aliases": ["Deep Verte"],
+    "filename": "Deep_Verte.png"
+  },
+  {
+    "name": "EAFI",
+    "aliases": ["EAFI"],
+    "filename": "EAFI.png"
+  },
+  {
+    "name": "Echten Esport",
+    "aliases": ["Echten Esports"],
+    "filename": "Echten_Esport.png"
+  },
+  {
+    "name": "Equinox Esport",
+    "aliases": ["Equinox Esports"],
+    "filename": "Equinox_Esport.png"
+  },
+  {
+    "name": "Evyl Hope",
+    "aliases": ["Evyl Hope"],
+    "filename": "Evyl_Hope.png"
   }
 ]
