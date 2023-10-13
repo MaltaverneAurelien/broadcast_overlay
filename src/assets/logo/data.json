@@ -298,5 +298,25 @@
     "name": "Evyl Hope",
     "aliases": ["Evyl Hope"],
     "filename": "Evyl_Hope.png"
+  },
+  {
+    "name": "Evyl Origin",
+    "aliases": ["Evyl Origin"],
+    "filename": "Evyl_Origin.png"
+  },
+  {
+    "name": "GKR",
+    "aliases": ["GKR Esport"],
+    "filename": "GKR.png"
+  },
+  {
+    "name": "Frenesey 022",
+    "aliases": ["Frenesey"],
+    "filename": "Frenesey_022.png"
+  },
+  {
+    "name": "Greenstar",
+    "aliases": ["Greenstar"],
+    "filename": "Greenstar.png"
   }
 ]
