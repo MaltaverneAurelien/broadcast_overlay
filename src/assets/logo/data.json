@@ -328,5 +328,15 @@
     "name": "TRBB",
     "aliases": ["TRBB"],
     "filename": "TRBB.png"
+  },
+  {
+    "name": "Oreo",
+    "aliases": ["Oreo"],
+    "filename": "Oreo.png"
+  },
+  {
+    "name": "Granola",
+    "aliases": ["Granola"],
+    "filename": "Granola.png"
   }
 ]
