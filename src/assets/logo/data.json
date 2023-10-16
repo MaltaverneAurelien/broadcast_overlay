@@ -31,7 +31,7 @@
   },
   {
     "name": "TFM Esport",
-    "aliases": ["TFM Esport"],
+    "aliases": ["TFM Esports"],
     "filename": "TFM_Esport.png"
   },
   {
@@ -335,8 +335,133 @@
     "filename": "Oreo.png"
   },
   {
+    "name": "Grind Hard",
+    "aliases": ["Grind Hard"],
+    "filename": "Grind_Hard.png"
+  },
+  {
+    "name": "Haste",
+    "aliases": ["Haste"],
+    "filename": "Haste.png"
+  },
+  {
+    "name": "Hollow Knights",
+    "aliases": ["Hollow Knights"],
+    "filename": "Hollow_Knights.png"
+  },
+  {
+    "name": "Honary",
+    "aliases": ["Honary"],
+    "filename": "Honary.png"
+  },
+  {
     "name": "Granola",
     "aliases": ["Granola"],
     "filename": "Granola.png"
+  },
+  {
+    "name": "Imperious",
+    "aliases": ["Imperious"],
+    "filename": "Imperious.png"
+  },
+  {
+    "name": "ISG",
+    "aliases": ["ISG"],
+    "filename": "ISG.png"
+  },
+  {
+    "name": "K7",
+    "aliases": ["K7"],
+    "filename": "K7.png"
+  },
+  {
+    "name": "Larasba Esport",
+    "aliases": ["Larasba Esports"],
+    "filename": "Larasba_Esport.png"
+  },
+  {
+    "name": "Les ZEU",
+    "aliases": ["Les ZEU"],
+    "filename": "Les_ZEU.png"
+  },
+  {
+    "name": "MGA",
+    "aliases": ["MGA"],
+    "filename": "MGA.png"
+  },
+  {
+    "name": "MNLY Crew",
+    "aliases": ["MNLY Crew"],
+    "filename": "MNLY_Crew.png"
+  },
+  {
+    "name": "Mulhouse Gaming",
+    "aliases": ["Mulhouse Gaming"],
+    "filename": "Mulhouse_Gaming.png"
+  },
+  {
+    "name": "Nokturn Esport",
+    "aliases": ["Nokturn Esports"],
+    "filename": "Nokturn_Esport.png"
+  },
+  {
+    "name": "NTHX",
+    "aliases": ["NTHX"],
+    "filename": "NTHX.png"
+  },
+  {
+    "name": "Rakusan Esport",
+    "aliases": ["Rakusan Esports"],
+    "filename": "Rakusan_Esport.png"
+  },
+  {
+    "name": "RGE",
+    "aliases": ["Radio Gaming Esport"],
+    "filename": "RGE.png"
+  },
+  {
+    "name": "Nelesta Orange",
+    "aliases": ["Nelesta Orange"],
+    "filename": "Nelesta_Orange.png"
+  },
+  {
+    "name": "SPM",
+    "aliases": ["SPM"],
+    "filename": "SPM.png"
+  },
+  {
+    "name": "Rigel",
+    "aliases": ["Rigel Esport"],
+    "filename": "Rigel.png"
+  },
+  {
+    "name": "Riijky Corp",
+    "aliases": ["Riijky Corp"],
+    "filename": "Riijky_Corp.png"
+  },
+  {
+    "name": "Nelesta Red",
+    "aliases": ["Nelesta Red"],
+    "filename": "Nelesta_Red.png"
+  },
+  {
+    "name": "Onorst Esport",
+    "aliases": ["Onorst Esports"],
+    "filename": "Onorst_Esport.png"
+  },
+  {
+    "name": "Princesses",
+    "aliases": ["Princesses"],
+    "filename": "Princesses.png"
+  },
+  {
+    "name": "SOG Hades",
+    "aliases": ["Sog Hades"],
+    "filename": "Sog_Hades.png"
+  },
+  {
+    "name": "TFM Thorium",
+    "aliases": ["TFM Thorium"],
+    "filename": "TFM_Thorium.png"
   }
 ]
