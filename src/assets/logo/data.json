@@ -463,5 +463,35 @@
     "name": "TFM Thorium",
     "aliases": ["TFM Thorium"],
     "filename": "TFM_Thorium.png"
+  },
+  {
+    "name": "Bromance",
+    "aliases": ["Bromance"],
+    "filename": "Bromance.png"
+  },
+  {
+    "name": "Just Chilling",
+    "aliases": ["Just-Chilling"],
+    "filename": "Just_Chilling.png"
+  },
+  {
+    "name": "Wake Up",
+    "aliases": ["WakeUp"],
+    "filename": "Wake_Up.png"
+  },
+  {
+    "name": "Rysing Squad",
+    "aliases": ["Rysing Squad"],
+    "filename": "Rysing_Squad.png"
+  },
+  {
+    "name": "Ice Horde",
+    "aliases": ["Ice Horde"],
+    "filename": "Ice_Horde.png"
+  },
+  {
+    "name": "Acid Esports",
+    "aliases": ["Acid Esport"],
+    "filename": "Acid_Esports.png"
   }
 ]
