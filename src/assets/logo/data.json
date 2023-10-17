@@ -498,5 +498,10 @@
     "name": "For The Win Evolution",
     "aliases": ["FTW Evolution"],
     "filename": "For_The_Win_Evolution.png"
+  },
+  {
+    "name": "New Edge Esports",
+    "aliases": ["New Edge Esport"],
+    "filename": "New_Edge_Esports.png"
   }
 ]
