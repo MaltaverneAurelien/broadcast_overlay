@@ -493,5 +493,10 @@
     "name": "Acid Esports",
     "aliases": ["Acid Esport"],
     "filename": "Acid_Esports.png"
+  },
+  {
+    "name": "For The Win Evolution",
+    "aliases": ["FTW Evolution"],
+    "filename": "For_The_Win_Evolution.png"
   }
 ]
