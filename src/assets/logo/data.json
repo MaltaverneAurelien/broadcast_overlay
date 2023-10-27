@@ -503,5 +503,45 @@
     "name": "New Edge Esports",
     "aliases": ["New Edge Esport"],
     "filename": "New_Edge_Esports.png"
+  },
+  {
+    "name": "DHE Esport",
+    "aliases": ["Dark Heaven Esports"],
+    "filename": "DHE_Esport.png"
+  },
+  {
+    "name": "Solis Rising",
+    "aliases": ["Solis Rising Esport"],
+    "filename": "Solis_Rising.png"
+  },
+  {
+    "name": "Team HSD",
+    "aliases": ["Team HSD"],
+    "filename": "Team_HSD.png"
+  },
+  {
+    "name": "TTC Prodige",
+    "aliases": ["TTC"],
+    "filename": "TTC_Prodige.png"
+  },
+  {
+    "name": "T2S Esport",
+    "aliases": ["T2S Esports"],
+    "filename": "T2S_Esport.png"
+  },
+  {
+    "name": "TS4 Esport",
+    "aliases": ["S4 Esports"],
+    "filename": "TS4_Esport.png"
+  },
+  {
+    "name": "Veloxia",
+    "aliases": ["Veloxia"],
+    "filename": "Veloxia.png"
+  },
+  {
+    "name": "Zephyr Esport",
+    "aliases": ["Zephyr Esports"],
+    "filename": "Zephyr_Esport.png"
   }
 ]
