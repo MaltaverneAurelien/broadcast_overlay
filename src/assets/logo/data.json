@@ -543,5 +543,20 @@
     "name": "Zephyr Esport",
     "aliases": ["Zephyr Esports"],
     "filename": "Zephyr_Esport.png"
+  },
+  {
+    "name": "Esport Club Brest",
+    "aliases": ["ECB"],
+    "filename": "Esport_Club_Brest.png"
+  },
+  {
+    "name": "French Amigos",
+    "aliases": ["French Amigos"],
+    "filename": "French_Amigos.png"
+  },
+  {
+    "name": "Xperiency",
+    "aliases": ["Xperiency"],
+    "filename": "Xperiency.png"
   }
 ]
