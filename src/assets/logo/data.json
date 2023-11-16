@@ -558,5 +558,10 @@
     "name": "Xperiency",
     "aliases": ["Xperiency"],
     "filename": "Xperiency.png"
+  },
+  {
+    "name": "Pepsi",
+    "aliases": ["Pepsi"],
+    "filename": "Pepsi.png"
   }
 ]
