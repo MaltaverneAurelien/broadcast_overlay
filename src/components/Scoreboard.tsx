@@ -98,6 +98,14 @@ const Scoreboard: React.FC<Props> = ({
               <p className="mx-auto uppercase">Overtime</p>
             </Card>
           )}
+          {/* {isOT === false && (
+            <Card
+              color="main"
+              className="w-2/3 h-9 mx-auto"
+            >
+              <p className="mx-auto uppercase">DCup #42 - 3vs3</p>
+            </Card>
+          )} */}
         </div>
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
