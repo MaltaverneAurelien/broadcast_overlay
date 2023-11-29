@@ -2,16 +2,7 @@ import Card from "./Card";
 import { useState } from "react";
 import CardBoost from "./CardBoost";
 import type { Player } from "../types/updateState";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PlayerStatus, { StatusEvent } from "../types/playerStatus";
-
-import {
-  faBasketball,
-  faHandshakeAngle,
-  faMeteor,
-  faBomb,
-  faShieldHeart,
-} from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   players: Player[];
@@ -96,22 +87,19 @@ const Players: React.FC<Props> = ({
               </span>
               <div className="flex gap-x-4 items-center">
                 {getLastEvent(p).includes("demo") && (
-                  <FontAwesomeIcon icon={faBomb} className="w-7 h-7" />
+                  <img src="./icons/demolition.png" className="w-7 h-7 object-contain" />
                 )}
                 {getLastEvent(p).includes("assist") && (
-                  <FontAwesomeIcon
-                    icon={faHandshakeAngle}
-                    className="w-7 h-7"
-                  />
+                  <img src="./icons/assist.png" className="w-7 h-7 object-contain" />
                 )}
                 {getLastEvent(p).includes("goal") && (
-                  <FontAwesomeIcon icon={faBasketball} className="w-7 h-7" />
+                  <img src="./icons/goal.png" className="w-7 h-7 object-contain" />
                 )}
                 {getLastEvent(p).includes("save") && (
-                  <FontAwesomeIcon icon={faShieldHeart} className="w-7 h-7" />
+                  <img src="./icons/save.png" className="w-7 h-7 object-contain" />
                 )}
                 {getLastEvent(p).includes("shot") && (
-                  <FontAwesomeIcon icon={faMeteor} className="w-7 h-7" />
+                  <img src="./icons/target_shot.png" className="w-7 h-7 object-contain" />
                 )}
               </div>
             </div>

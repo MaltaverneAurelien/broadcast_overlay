@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import getColorClasses from "../utils/getColorClasses";
 import getRotationClass from "../utils/getRotationClass";
 
@@ -6,6 +8,7 @@ interface Props {
   filled?: boolean;
   children?: React.ReactNode;
   className?: string;
+  type?: 0 | 1 | 2 | 3 | 4 | 5 | 6
 }
 
 interface CardFillProps {
@@ -21,28 +24,33 @@ const Card: React.FC<Props> = ({
   color,
   filled,
   className,
+  type
 }) => {
+  const [background, _] = useState(type || 0)
   return (
-    <div
-      className={`relative bg-gradient-to-r p-[3px] flex ${getColorClasses(
-        color
-      )} ${className}`}
-    >
+    <div className={`relative w-full h-full ${className}`}>
+      <img src="./CadreEclatGivrée.png" className={`absolute z-10 top-0 w-full h-full `} />
       <div
-        className={`w-full h-full overflow-hidden ${getRotationClass(color)}`}
+        className={`relative bg-gradient-to-r p-[3px] h-full w-full flex ${getColorClasses(
+          color
+        )}`}
       >
-        <img
-          src="./background.png"
-          className="w-full h-full object-cover"
-          alt="background"
-        />
-      </div>
-      <div className="absolute text-white p-2 flex top-0 left-0 right-0 bottom-0 items-center w-full">
-        {filled === true ? (
-          <CardFill colorClasses={getColorClasses(color)} />
-        ) : (
-          children
-        )}
+        <div
+          className={`w-full h-full overflow-hidden ${getRotationClass(color)}`}
+        >
+            <img
+              src="./background.png"
+              className="w-full h-full object-cover"
+              alt="background"
+            />
+        </div>
+        <div className="absolute text-white p-2 flex top-0 left-0 right-0 bottom-0 items-center w-full">
+          {filled === true ? (
+            <CardFill colorClasses={getColorClasses(color)} />
+          ) : (
+            children
+          )}
+        </div>
       </div>
     </div>
   );

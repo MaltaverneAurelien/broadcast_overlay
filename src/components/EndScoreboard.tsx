@@ -6,7 +6,7 @@ import Scoreboard from "./Scoreboard";
 import StatsRow from "./StatsRow";
 import Card from "./Card";
 
-import background from "../assets/background.mp4";
+import background from "../assets/background_hiver.mp4";
 
 interface Props {
   players: Player[];

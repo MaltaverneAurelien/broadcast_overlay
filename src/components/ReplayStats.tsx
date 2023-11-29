@@ -4,15 +4,6 @@ import type { Player } from "../types/updateState";
 import convertSeconds from "../utils/convertSeconds";
 import getTeamColor from "../utils/getTeamColor";
 
-import {
-  faCrown,
-  faHandshakeAngle,
-  faMeteor,
-  faStopwatch,
-  faBullseye
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import Card from "./Card";
 import GoalScoredData from "../types/goalScored";
 
@@ -38,7 +29,10 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
         >
           <div className="w-full flex justify-around px-12 items-center pt-1">
             <div className="flex flex-col items-center gap-y-1.5">
-              <FontAwesomeIcon icon={faCrown} className="w-8 h-8" />
+              <img
+                src="./icons/scorer.png"
+                className="w-8 h-8 object-contain"
+              />
               <span
                 className="font-semibold overflow-hidden text-ellipsis whitespace-nowrap"
                 style={{
@@ -48,34 +42,38 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
                 {lastGoal?.scorer.name}
               </span>
             </div>
+            
+            <div className="flex flex-col items-center gap-y-1.5">
+              <img src="./icons/goal.png" className="w-8 h-8 object-contain" />
+              <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
+                {player?.goals} buts
+              </span>
+            </div>
 
             {lastGoal?.assister.name !== "" && (
               <div className="flex flex-col items-center gap-y-1.5">
-                <FontAwesomeIcon icon={faHandshakeAngle} className="w-8 h-8 " />
+                <img
+                  src="./icons/assist.png"
+                  className="w-8 h-8 object-contain"
+                />
                 <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
                   {lastGoal?.assister.name}
                 </span>
               </div>
             )}
 
-            {/*{player.goals > 1 && (
-              <div className="flex flex-col items-center gap-y-1.5">
-                <FontAwesomeIcon icon={faBullseye} className="w-8 h-8 " />
-                <span className="font-semibold max-w-[8rem] overflow-hidden text-ellipsis whitespace-nowrap">
-                  {player.goals} buts
-                </span>
-              </div>
-            )} */}
-
             <div className="flex flex-col items-center gap-y-1.5">
-              <FontAwesomeIcon icon={faMeteor} className="w-8 h-8" />
+              <img
+                src="./icons/ball_speed.png"
+                className="w-8 h-8 object-contain"
+              />
               <span className="font-semibold">
                 {Math.floor(lastGoal?.goalspeed || 0)} km/h
               </span>
             </div>
 
             <div className="flex flex-col items-center gap-y-1.5">
-              <FontAwesomeIcon icon={faStopwatch} className="w-8 h-8" />
+              <img src="./icons/timer.png" className="w-8 h-8 object-contain" />
               <span className="font-semibold">
                 {convertSeconds(lastGoal?.goaltime || 0)}
               </span>
