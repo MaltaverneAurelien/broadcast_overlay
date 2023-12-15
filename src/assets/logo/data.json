@@ -563,5 +563,25 @@
     "name": "Pepsi",
     "aliases": ["Pepsi"],
     "filename": "Pepsi.png"
+  },
+  {
+    "name": "Greenstar_Esport",
+    "aliases": ["Greenstar"],
+    "filename": "Greenstar_Esport.png"
+  },
+  {
+    "name": "Les_Artistes",
+    "aliases": ["Les Artistes"],
+    "filename": "Les_Artistes.png"
+  },
+  {
+    "name": "TripleM",
+    "aliases": ["Triple M"],
+    "filename": "TripleM.png"
+  },
+  {
+    "name": "TX_Esport",
+    "aliases": ["TX Esport"],
+    "filename": "TX_Esport.png"
   }
 ]
