@@ -316,8 +316,8 @@
   },
   {
     "name": "Greenstar",
-    "aliases": ["Greenstar"],
-    "filename": "Greenstar.png"
+    "aliases": ["Greenstar, Greenstar"],
+    "filename": "Greenstar_Esport.png"
   },
   {
     "name": "The Older Flop",
@@ -563,5 +563,15 @@
     "name": "Pepsi",
     "aliases": ["Pepsi"],
     "filename": "Pepsi.png"
+  },
+  {
+    "name": "Ultra Delta",
+    "aliases": ["Ultra Esport"],
+    "filename": "Ultra_Delta.png"
+  },
+  {
+    "name": "NTRS Vipere",
+    "aliases": ["NTRS Cobra"],
+    "filename": "NTRS_Esport.png"
   }
 ]

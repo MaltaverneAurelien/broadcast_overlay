@@ -29,7 +29,7 @@ const Card: React.FC<Props> = ({
   const [background, _] = useState(type || 0)
   return (
     <div className={`relative w-full h-full ${className}`}>
-      <img src="./CadreEclatGivrée.png" className={`absolute z-10 top-0 w-full h-full `} />
+      <img src="./background-Hiver-02.png" className={`absolute z-10 top-0 w-full h-full `} />
       <div
         className={`relative bg-gradient-to-r p-[3px] h-full w-full flex ${getColorClasses(
           color

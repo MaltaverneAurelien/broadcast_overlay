@@ -12,6 +12,7 @@ const Boost: React.FC<Props> = ({ player }) => {
   return (
     <>
       <div className="relative ml-auto rounded-full w-48 h-48 flex items-center justify-center">
+        <img src="./boost-Gel.png" className={`absolute z-10 top-0 w-full h-full `} />
         <div
           className={`bg-gradient-to-tr ${colorClasses} p-1 w-full h-full rounded-full flex items-center justify-center`}
         >
