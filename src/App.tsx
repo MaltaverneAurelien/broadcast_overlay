@@ -222,7 +222,7 @@ function App() {
   return (
     <>
       <Transition play={transition} />
-      {gameStatus === "ended" && (
+      {gameStatus !== "ended" && (
         <EndScoreboard
           players={players}
           teams={teams}
@@ -230,7 +230,7 @@ function App() {
           gamesWon={gamesWon}
         />
       )} 
-      {gameStatus !== "ended" && (
+      {gameStatus === "ended" && (
         <Main
           players={players}
           targetPlayer={targetPlayer}
