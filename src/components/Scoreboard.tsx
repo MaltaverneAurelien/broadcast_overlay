@@ -66,7 +66,12 @@ const Scoreboard: React.FC<Props> = ({
               color="blue"
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[0]}
-            />
+            >
+              <img
+                src="./hiver_background_bestof.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
+            </Card>
           ))}
         </div>
       </div>
@@ -149,7 +154,12 @@ const Scoreboard: React.FC<Props> = ({
               color="orange"
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[1]}
-            />
+            >
+              <img
+                src="./hiver_background_bestof.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
+            </Card>
           ))}
         </div>
       </div>
