@@ -573,5 +573,40 @@
     "name": "NTRS Vipere",
     "aliases": ["NTRS Cobra"],
     "filename": "NTRS_Esport.png"
+  },
+  {
+    "name": "AMD",
+    "aliases": ["Amd"],
+    "filename": "AMD.png"
+  },
+  {
+    "name": "INTEL",
+    "aliases": ["Intel"],
+    "filename": "intel.png"
+  },
+  {
+    "name": "Kinder",
+    "aliases": ["KINDER"],
+    "filename": "Kinder.png"
+  },
+  {
+    "name": "Milka",
+    "aliases": ["MILKA"],
+    "filename": "Milka.png"
+  },
+  {
+    "name": "Lego",
+    "aliases": ["LEGO"],
+    "filename": "Lego.png"
+  },
+  {
+    "name": "Playmobile",
+    "aliases": ["PLAYMOBILE"],
+    "filename": "Playmobile.png"
+  },
+  {
+    "name": "Daryx",
+    "aliases": ["Daryxos"],
+    "filename": "Daryxos.png"
   }
 ]
