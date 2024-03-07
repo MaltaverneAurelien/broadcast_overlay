@@ -608,5 +608,15 @@
     "name": "Daryx",
     "aliases": ["Daryxos"],
     "filename": "Daryxos.png"
+  },
+  {
+    "name": "Zen",
+    "aliases": ["ZEN"],
+    "filename": "Zen.png"
+  },
+  {
+    "name": "Vatira",
+    "aliases": ["VATIRA"],
+    "filename": "Vatira.png"
   }
 ]
