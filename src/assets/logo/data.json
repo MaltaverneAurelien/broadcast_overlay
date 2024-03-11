@@ -618,5 +618,10 @@
     "name": "Vatira",
     "aliases": ["VATIRA"],
     "filename": "Vatira.png"
+  },
+  {
+    "name": "Empire",
+    "aliases": ["Empire"],
+    "filename": "Empire.png"
   }
 ]
