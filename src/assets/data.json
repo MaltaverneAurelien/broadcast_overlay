@@ -580,9 +580,9 @@
     "filename": "AMD.png"
   },
   {
-    "name": "INTEL",
-    "aliases": ["Intel"],
-    "filename": "intel.png"
+    "name": "Intel",
+    "aliases": ["intel"],
+    "filename": "Intel.png"
   },
   {
     "name": "Kinder",
