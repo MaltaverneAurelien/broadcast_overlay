@@ -623,5 +623,10 @@
     "name": "Empire",
     "aliases": ["Empire"],
     "filename": "Empire.png"
+  },
+  {
+    "name": "Nexus_Esport",
+    "aliases": ["Nexus Hope, Nexus"],
+    "filename": "Nexus_Esport.png"
   }
 ]
