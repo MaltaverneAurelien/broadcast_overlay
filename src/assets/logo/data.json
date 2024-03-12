@@ -315,6 +315,11 @@
     "filename": "Frenesey_022.png"
   },
   {
+    "name": "Greenstar",
+    "aliases": ["Greenstar, Greenstar"],
+    "filename": "Greenstar_Esport.png"
+  },
+  {
     "name": "The Older Flop",
     "aliases": ["The Older Flop"],
     "filename": "The_Olders_Flop.png"
@@ -531,7 +536,7 @@
   },
   {
     "name": "Veloxia",
-    "aliases": ["Veloxia"],
+    "aliases": ["Veloxia Venus"],
     "filename": "Veloxia.png"
   },
   {
@@ -560,28 +565,63 @@
     "filename": "Pepsi.png"
   },
   {
-    "name": "Greenstar_Esport",
-    "aliases": ["Greenstar"],
-    "filename": "Greenstar_Esport.png"
+    "name": "Ultra Delta",
+    "aliases": ["Ultra Esport"],
+    "filename": "Ultra_Delta.png"
   },
   {
-    "name": "Les_Artistes",
-    "aliases": ["Les Artistes"],
-    "filename": "Les_Artistes.png"
+    "name": "NTRS Vipere",
+    "aliases": ["NTRS Cobra"],
+    "filename": "NTRS_Esport.png"
   },
   {
-    "name": "TripleM",
-    "aliases": ["Triple M"],
-    "filename": "TripleM.png"
+    "name": "AMD",
+    "aliases": ["Amd"],
+    "filename": "AMD.png"
   },
   {
-    "name": "TX_Esport",
-    "aliases": ["TX Esport"],
-    "filename": "TX_Esport.png"
+    "name": "INTEL",
+    "aliases": ["Intel"],
+    "filename": "intel.png"
   },
   {
-    "name": "Nexus_Esport",
-    "aliases": ["Nexus, Nexus Hope"],
-    "filename": "Nexus_Esport.png"
+    "name": "Kinder",
+    "aliases": ["KINDER"],
+    "filename": "Kinder.png"
+  },
+  {
+    "name": "Milka",
+    "aliases": ["MILKA"],
+    "filename": "Milka.png"
+  },
+  {
+    "name": "Lego",
+    "aliases": ["LEGO"],
+    "filename": "Lego.png"
+  },
+  {
+    "name": "Playmobile",
+    "aliases": ["PLAYMOBILE"],
+    "filename": "Playmobile.png"
+  },
+  {
+    "name": "Daryx",
+    "aliases": ["Daryxos"],
+    "filename": "Daryxos.png"
+  },
+  {
+    "name": "Zen",
+    "aliases": ["ZEN"],
+    "filename": "Zen.png"
+  },
+  {
+    "name": "Vatira",
+    "aliases": ["VATIRA"],
+    "filename": "Vatira.png"
+  },
+  {
+    "name": "Empire",
+    "aliases": ["Empire"],
+    "filename": "Empire.png"
   }
 ]

@@ -2,16 +2,7 @@ import Card from "./Card";
 import { useState } from "react";
 import CardBoost from "./CardBoost";
 import type { Player } from "../types/updateState";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PlayerStatus, { StatusEvent } from "../types/playerStatus";
-
-import {
-  faBasketball,
-  faHandshakeAngle,
-  faMeteor,
-  faBomb,
-  faShieldHeart,
-} from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   players: Player[];
@@ -67,12 +58,16 @@ const Players: React.FC<Props> = ({
             color={p.id == target ? "white" : color}
             className="h-full"
           >
+              <img
+                src="./hiver_background_player.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
             <div className="w-full">
               <div className="grid grid-cols-12 w-11/12 mx-auto">
-                <p className="text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap ">
+                <p className="z-10 text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap">
                   {p.name}
                 </p>
-                <p className="text-xl text-end font-semibold col-span-2">
+                <p className="z-10 text-xl text-end font-semibold col-span-2">
                   {p.boost}
                 </p>
               </div>
@@ -86,32 +81,48 @@ const Players: React.FC<Props> = ({
             key={p.id + "2121"}
             color={p.id == target ? "white" : color}
             className={
-              "h-full transition-all duration-500 " +
+              "z-20 h-full transition-all duration-500 " +
               (getEvent(p) !== undefined ? "-translate-y-full" : "")
             }
           >
-            <div className="w-full flex items-center justify-between px-4">
-              <span className="text-xl text-ellipsis overflow-hidden whitespace-nowrap pr-2 ">
+            <div className="w-full flex items-center justify-between px-1">
+              <img
+                src="./hiver_background_player.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
+              <span className="z-10 text-xl text-ellipsis overflow-hidden whitespace-nowrap pr-2 ">
                 {p.name}
               </span>
-              <div className="flex gap-x-4 items-center">
+              <div className="z-10 flex gap-x-4 items-center">
                 {getLastEvent(p).includes("demo") && (
-                  <FontAwesomeIcon icon={faBomb} className="w-7 h-7" />
+                  <img
+                    src="./icons/demolition.png"
+                    className="w-9 h-9 object-contain"
+                  />
                 )}
                 {getLastEvent(p).includes("assist") && (
-                  <FontAwesomeIcon
-                    icon={faHandshakeAngle}
-                    className="w-7 h-7"
+                  <img
+                    src="./icons/assist.png"
+                    className="w-7 h-7 object-contain"
                   />
                 )}
                 {getLastEvent(p).includes("goal") && (
-                  <FontAwesomeIcon icon={faBasketball} className="w-7 h-7" />
+                  <img
+                    src="./icons/goal.png"
+                    className="w-7 h-7 object-contain"
+                  />
                 )}
                 {getLastEvent(p).includes("save") && (
-                  <FontAwesomeIcon icon={faShieldHeart} className="w-7 h-7" />
+                  <img
+                    src="./icons/save.png"
+                    className="w-7 h-7 object-contain"
+                  />
                 )}
                 {getLastEvent(p).includes("shot") && (
-                  <FontAwesomeIcon icon={faMeteor} className="w-7 h-7" />
+                  <img
+                    src="./icons/target_shot.png"
+                    className="w-7 h-7 object-contain"
+                  />
                 )}
               </div>
             </div>

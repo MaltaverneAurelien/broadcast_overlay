@@ -44,13 +44,19 @@ const Scoreboard: React.FC<Props> = ({
       <div className="col-span-4 flex flex-col gap-y-1">
         <div className="flex gap-x-1">
           <Card color="blue" className="w-full h-16">
+            <img
+              src="./hiver_background_player.png"
+              className={`absolute top-0 right-0.5 w-full h-full `}
+            />
             {findTeamLogo(0) && (
               <img
-                className="rounded-full h-20 w-1/4 object-contain"
+                className="rounded-full z-10 h-20 w-1/4 object-contain"
                 src={"/src/assets/logo/" + findTeamLogo(0)}
               />
             )}
-            <p className="text-2xl font-semibold mx-auto">{teams[0]?.name}</p>
+            <p className="z-10 text-2xl font-semibold mx-auto">
+              {teams[0]?.name}
+            </p>
           </Card>
         </div>
         <div className="flex flex-row-reverse gap-x-1 w-full">
@@ -60,7 +66,12 @@ const Scoreboard: React.FC<Props> = ({
               color="blue"
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[0]}
-            />
+            >
+              <img
+                src="./hiver_background_bestof.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
+            </Card>
           ))}
         </div>
       </div>
@@ -68,6 +79,10 @@ const Scoreboard: React.FC<Props> = ({
         <div className="grid grid-cols-4 gap-x-2">
           <div>
             <Card color="blue" className="w-full h-16">
+              <img
+                src="./hiver_background_score.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
               <span className="mx-auto font-bold text-3xl">
                 {teams[0]?.score}
               </span>
@@ -75,6 +90,10 @@ const Scoreboard: React.FC<Props> = ({
           </div>
           <div className="col-span-2 h-16 flex">
             <Card color="main" className="w-full">
+              <img
+                src="./hiver_background_score.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
               <p className="mx-auto font-semibold text-3xl">
                 {isOT && "+"}
                 {convertSeconds(seconds)}
@@ -83,6 +102,10 @@ const Scoreboard: React.FC<Props> = ({
           </div>
           <div>
             <Card color="orange" className="w-full h-16">
+              <img
+                src="./hiver_background_score.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
               <span className="mx-auto font-bold text-3xl">
                 {teams[1]?.score}
               </span>
@@ -110,10 +133,16 @@ const Scoreboard: React.FC<Props> = ({
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
         <Card color="orange" className="w-full h-16">
-          <p className="mx-auto text-2xl font-semibold">{teams[1]?.name}</p>
+          <img
+            src="./hiver_background_player.png"
+            className={`absolute top-0 right-0.5 w-full h-full `}
+          />
+          <p className="z-10 mx-auto text-2xl font-semibold">
+            {teams[1]?.name}
+          </p>
           {findTeamLogo(1) && (
             <img
-              className="rounded-full h-20 w-1/4 object-contain"
+              className="rounded-full z-10 h-20 w-1/4 object-contain"
               src={"/src/assets/logo/" + findTeamLogo(1)}
             />
           )}
@@ -125,7 +154,12 @@ const Scoreboard: React.FC<Props> = ({
               color="orange"
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[1]}
-            />
+            >
+              <img
+                src="./hiver_background_bestof.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
+            </Card>
           ))}
         </div>
       </div>
