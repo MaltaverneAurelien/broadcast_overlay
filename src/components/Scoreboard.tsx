@@ -4,7 +4,7 @@ import Card from "./Card";
 import { Team } from "../types/updateState";
 import convertSeconds from "../utils/convertSeconds";
 
-import teamsLogo from "../assets/logo/data.json";
+import teamsLogo from "../assets/data.json";
 
 interface Props {
   teams: Team[];
@@ -51,7 +51,7 @@ const Scoreboard: React.FC<Props> = ({
             {findTeamLogo(0) && (
               <img
                 className="rounded-full z-10 h-20 w-1/4 object-contain"
-                src={"/src/assets/logo/" + findTeamLogo(0)}
+                src={"/logo/" + findTeamLogo(0)}
               />
             )}
             <p className="z-10 text-2xl font-semibold mx-auto">
@@ -143,7 +143,7 @@ const Scoreboard: React.FC<Props> = ({
           {findTeamLogo(1) && (
             <img
               className="rounded-full z-10 h-20 w-1/4 object-contain"
-              src={"/src/assets/logo/" + findTeamLogo(1)}
+              src={"/logo/" + findTeamLogo(1)}
             />
           )}
         </Card>
