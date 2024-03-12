@@ -578,5 +578,10 @@
     "name": "TX_Esport",
     "aliases": ["TX Esport"],
     "filename": "TX_Esport.png"
+  },
+  {
+    "name": "Nexus_Esport",
+    "aliases": ["Nexus, Nexus Hope"],
+    "filename": "Nexus_Esport.png"
   }
 ]
