@@ -628,5 +628,15 @@
     "name": "Nexus",
     "aliases": ["Nexus Hope, Nexus Esport"],
     "filename": "Nexus_Esport.png"
+  },
+  {
+    "name": "LCE Rouge",
+    "aliases": ["LCE Bleu, LCE Blanc"],
+    "filename": "LCE_Rouge.png"
+  },
+  {
+    "name": "Veridict Esport",
+    "aliases": ["Veridict"],
+    "filename": "Veridict_Esport.png"
   }
 ]
