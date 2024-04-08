@@ -638,5 +638,10 @@
     "name": "Veridict Esport",
     "aliases": ["Veridict"],
     "filename": "Veridict_Esport.png"
+  },
+  {
+    "name": "Astaroth Esport",
+    "aliases": ["Astaroth Esports"],
+    "filename": "Astaroth_Esport.png"
   }
 ]
