@@ -643,5 +643,10 @@
     "name": "Astaroth Esport",
     "aliases": ["Astaroth Esports"],
     "filename": "Astaroth_Esport.png"
+  },
+  {
+    "name": "Zing Zone",
+    "aliases": ["ZingZone"],
+    "filename": "Zing_Zone.png"
   }
 ]
