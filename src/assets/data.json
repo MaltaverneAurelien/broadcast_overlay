@@ -290,8 +290,8 @@
     "filename": "Echten_Esport.png"
   },
   {
-    "name": "Equinox Esport",
-    "aliases": ["Equinox Esports"],
+    "name": "Equinoxe Esport",
+    "aliases": ["Equinoxe"],
     "filename": "Equinox_Esport.png"
   },
   {
@@ -648,5 +648,10 @@
     "name": "Zing Zone",
     "aliases": ["ZingZone"],
     "filename": "Zing_Zone.png"
+  },
+  {
+    "name": "La Saliere",
+    "aliases": ["LaSaliere"],
+    "filename": "La_Saliere.png"
   }
 ]
