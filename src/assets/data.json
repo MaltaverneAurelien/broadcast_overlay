@@ -536,7 +536,7 @@
   },
   {
     "name": "Veloxia",
-    "aliases": ["Veloxia Venus"],
+    "aliases": ["Veloxia Venus, Veloxia Jupiter"],
     "filename": "Veloxia.png"
   },
   {
@@ -653,5 +653,10 @@
     "name": "La Saliere",
     "aliases": ["LaSaliere"],
     "filename": "La_Saliere.png"
+  },
+  {
+    "name": "Weld Reborn",
+    "aliases": ["WeldReborn"],
+    "filename": "Weld_Reborn.png"
   }
 ]
