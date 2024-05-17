@@ -658,5 +658,10 @@
     "name": "Weld Reborn",
     "aliases": ["WeldReborn"],
     "filename": "Weld_Reborn.png"
+  },
+  {
+    "name": "OveReign",
+    "aliases": ["Overeign Esport"],
+    "filename": "OveReign.png"
   }
 ]
