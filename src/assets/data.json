@@ -663,5 +663,10 @@
     "name": "OveReign",
     "aliases": ["Overeign Esport"],
     "filename": "OveReign.png"
+  },
+  {
+    "name": "Digity Esport",
+    "aliases": ["Digity"],
+    "filename": "Digity_Esport.png"
   }
 ]
