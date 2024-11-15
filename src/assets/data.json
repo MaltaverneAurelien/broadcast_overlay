@@ -631,7 +631,7 @@
   },
   {
     "name": "LCE",
-    "aliases": ["LCE Bleu, LCE Blanc"],
+    "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
     "filename": "LCE_Rouge.png"
   },
   {
