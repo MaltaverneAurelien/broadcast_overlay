@@ -665,13 +665,13 @@
     "filename": "OveReign.png"
   },
   {
+    "name": "Deluxxe Emeraude",
+    "aliases": ["Deluxxe Esport"],
+    "filename": "Deluxxe_Emeraude.png"
+  },
+  {
     "name": "Digity Esport",
     "aliases": ["Digity"],
     "filename": "Digity_Esport.png"
-  },
-  {
-    "name": "Deluxxe Emeraude",
-    "aliases": ["Deluxxe Esport"],
-    "filename": "Deluxxe.png"
   }
 ]
