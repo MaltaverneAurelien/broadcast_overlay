@@ -630,7 +630,7 @@
     "filename": "Nexus_Esport.png"
   },
   {
-    "name": "LCE BLEU",
+    "name": "LCE",
     "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
     "filename": "LCE_Rouge.png"
   },
@@ -666,7 +666,7 @@
   },
   {
     "name": "Deluxxe Emeraude",
-    "aliases": ["Deluxxe Esport"],
+    "aliases": ["Deluxxe Esport, Deluxxe"],
     "filename": "Deluxxe_Emeraude.png"
   },
   {
