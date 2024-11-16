@@ -130,8 +130,13 @@
     "filename": "FC_Mezon.png"
   },
   {
-    "name": "TSK Esport",
-    "aliases": ["TSK Ligue"],
+    "name": "TSK Heimdall",
+    "aliases": ["TSK Esport"],
+    "filename": "TSK_Esport.png"
+  },
+  {
+    "name": "TSK Vidar",
+    "aliases": ["TSK"],
     "filename": "TSK_Esport.png"
   },
   {
