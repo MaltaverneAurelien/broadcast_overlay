@@ -8,6 +8,7 @@ import Card from "./Card";
 
 import background from "../assets/background.mp4";
 import backgroundHiver from "../assets/background_hiver.mp4";
+import backgroundArcane from "../assets/background_arcane.mp4";
 
 interface Props {
   players: Player[];
