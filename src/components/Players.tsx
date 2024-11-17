@@ -58,10 +58,10 @@ const Players: React.FC<Props> = ({
             color={p.id == target ? "white" : color}
             className="h-full"
           >
-              {/* <img
+              <img
                 src="./hiver_background_player.png"
                 className={`absolute top-0 right-0.5 w-full h-full `}
-              /> */}
+              />
             <div className="w-full">
               <div className="grid grid-cols-12 w-11/12 mx-auto">
                 <p className="z-10 text-xl col-span-10 text-ellipsis overflow-hidden whitespace-nowrap">
@@ -86,10 +86,10 @@ const Players: React.FC<Props> = ({
             }
           >
             <div className="w-full flex items-center justify-between px-1">
-              {/* <img
+              <img
                 src="./hiver_background_player.png"
                 className={`absolute top-0 right-0.5 w-full h-full `}
-              /> */}
+              />
               <span className="z-10 text-xl text-ellipsis overflow-hidden whitespace-nowrap pr-2 ">
                 {p.name}
               </span>

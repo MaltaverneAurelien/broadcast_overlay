@@ -44,10 +44,10 @@ const Scoreboard: React.FC<Props> = ({
       <div className="col-span-4 flex flex-col gap-y-1">
         <div className="flex gap-x-1">
           <Card color="blue" className="w-full h-16">
-            {/* <img
+            <img
               src="./hiver_background_player.png"
               className={`absolute top-0 right-0.5 w-full h-full `}
-            /> */}
+            />
             {findTeamLogo(0) && (
               <img
                 className="rounded-full z-10 h-20 w-1/4 object-contain"
@@ -67,10 +67,10 @@ const Scoreboard: React.FC<Props> = ({
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[0]}
             >
-              {/* <img
+              <img
                 src="./hiver_background_bestof.png"
                 className={`absolute w-full h-full top-0 right-0.5`}
-              /> */}
+              />
             </Card>
           ))}
         </div>
@@ -79,10 +79,10 @@ const Scoreboard: React.FC<Props> = ({
         <div className="grid grid-cols-4 gap-x-2">
           <div>
             <Card color="blue" className="w-full h-16">
-              {/* <img
+              <img
                 src="./hiver_background_score.png"
                 className={`absolute top-0 right-0.5 w-full h-full `}
-              /> */}
+              />
               <span className="mx-auto font-bold text-3xl">
                 {teams[0]?.score}
               </span>
@@ -90,10 +90,10 @@ const Scoreboard: React.FC<Props> = ({
           </div>
           <div className="col-span-2 h-16 flex">
             <Card color="main" className="w-full">
-              {/* <img
+              <img
                 src="./hiver_background_score.png"
                 className={`absolute top-0 right-0.5 w-full h-full `}
-              /> */}
+              />
               <p className="mx-auto font-semibold text-3xl">
                 {isOT && "+"}
                 {convertSeconds(seconds)}
@@ -102,10 +102,10 @@ const Scoreboard: React.FC<Props> = ({
           </div>
           <div>
             <Card color="orange" className="w-full h-16">
-              {/* <img
+              <img
                 src="./hiver_background_score.png"
                 className={`absolute top-0 right-0.5 w-full h-full `}
-              /> */}
+              />
               <span className="mx-auto font-bold text-3xl">
                 {teams[1]?.score}
               </span>
@@ -118,25 +118,30 @@ const Scoreboard: React.FC<Props> = ({
               color="main"
               className="w-2/3 h-9 mx-auto opacity-90 animate-pulse"
             >
+              <img
+                src="./hiver_background_player.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
               <p className="mx-auto uppercase">Overtime</p>
             </Card>
           )}
-          {/* {isOT === false && (
-            <Card
-              color="main"
-              className="w-2/3 h-9 mx-auto"
-            >
-              <p className="mx-auto uppercase">DCup #42 - 3vs3</p>
+          {isOT === false && (
+            <Card color="main" className="w-2/3 h-9 mx-auto">
+              <img
+                src="./hiver_background_player.png"
+                className={`absolute w-full h-full top-0 right-0.5`}
+              />
+              <p className="mx-auto uppercase">DCup #44 - 3vs3</p>
             </Card>
-          )} */}
+          )}
         </div>
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
         <Card color="orange" className="w-full h-16">
-          {/* <img
+          <img
             src="./hiver_background_player.png"
             className={`absolute top-0 right-0.5 w-full h-full `}
-          /> */}
+          />
           <p className="z-10 mx-auto text-2xl font-semibold">
             {teams[1]?.name}
           </p>
@@ -155,10 +160,10 @@ const Scoreboard: React.FC<Props> = ({
               className="w-2/12 h-8"
               filled={i + 1 <= gamesWon[1]}
             >
-              {/* <img
+              <img
                 src="./hiver_background_bestof.png"
                 className={`absolute w-full h-full top-0 right-0.5`}
-              /> */}
+              />
             </Card>
           ))}
         </div>

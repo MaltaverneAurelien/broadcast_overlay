@@ -56,7 +56,7 @@ const EndScoreboard: React.FC<Props> = ({
         muted
         className="absolute -z-10"
       >
-        <source src={background} type="video/mp4" />
+        <source src={backgroundHiver} type="video/mp4" />
       </video>
       <div className="flex flex-col gap-y-8 px-16 pt-12">
         <div className="flex justify-center w-full">
@@ -70,13 +70,25 @@ const EndScoreboard: React.FC<Props> = ({
         <div className={`h-20 flex items-center gap-x-4 w-full`}>
           <Card color={"blue"} className="flex flex-grow h-full">
             <div className="w-full flex justify-around">
+              <img
+                src="./hiver_background_player.png"
+                className={`absolute top-0 right-0.5 w-full h-full `}
+              />
               <PlayerNames team={0} />
             </div>
           </Card>
           <Card color="main" className="h-full w-4/12">
+            <img
+              src="./hiver_background_player.png"
+              className={`absolute top-0 right-0.5 w-full h-full `}
+            />
             <div className="text-center mx-auto">Scoreboard</div>
           </Card>
           <Card color={"orange"} className="flex flex-grow h-full">
+            <img
+              src="./hiver_background_player.png"
+              className={`absolute top-0 right-0.5 w-full h-full `}
+            />
             <div className="w-full flex justify-around">
               <PlayerNames team={1} />
             </div>

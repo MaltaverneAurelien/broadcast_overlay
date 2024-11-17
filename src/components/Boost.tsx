@@ -48,10 +48,10 @@ const Boost: React.FC<Props> = ({ player }) => {
   return (
     <>
       <div className="relative ml-auto rounded-full w-48 h-48 flex items-center justify-center">
-        {/* <img
+        <img
           src="./boost-Gel.png"
           className={`absolute z-10 w-11/12 h-11/12 rounded-full flex items-center justify-center opacity-50`}
-        /> */}
+        />
         <div
           className={`absolute w-full h-full bg-gradient-to-br ${colorClasses} bg-clip-text opacity-90 flex justify-center`}
         >
