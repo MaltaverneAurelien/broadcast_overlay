@@ -8,7 +8,7 @@ interface Props {
   filled?: boolean;
   children?: React.ReactNode;
   className?: string;
-  type?: 0 | 1 | 2 | 3 | 4 | 5 | 6
+  type?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
 }
 
 interface CardFillProps {
@@ -24,9 +24,9 @@ const Card: React.FC<Props> = ({
   color,
   filled,
   className,
-  type
+  type,
 }) => {
-  const [background, _] = useState(type || 0)
+  const [background, _] = useState(type || 0);
   return (
     <div className={`relative w-full h-full ${className}`}>
       <div
@@ -37,11 +37,11 @@ const Card: React.FC<Props> = ({
         <div
           className={`w-full h-full overflow-hidden ${getRotationClass(color)}`}
         >
-            <img
-              src="./background.png"
-              className="w-full h-full object-cover"
-              alt="background"
-            />
+          <img
+            src="./background.png"
+            className="w-full h-full object-cover"
+            alt="background"
+          />
         </div>
         <div className="absolute text-white p-2 flex top-0 left-0 right-0 bottom-0 items-center w-full">
           {filled === true ? (
