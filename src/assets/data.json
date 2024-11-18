@@ -688,5 +688,20 @@
     "name": "Digity Esport",
     "aliases": ["Digity"],
     "filename": "Digity_Esport.png"
+  },
+  {
+    "name": "Miyagido",
+    "aliases": ["Miyagi-do"],
+    "filename": "Miyagi-Do.png"
+  },
+  {
+    "name": "Les Copaings",
+    "aliases": ["Les Copaings"],
+    "filename": "Les_copaings.png"
+  },
+  {
+    "name": "Gostfild Esport ",
+    "aliases": ["Gostfild"],
+    "filename": "Gostfild_Esport.png"
   }
 ]
