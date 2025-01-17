@@ -738,5 +738,10 @@
     "name": "Team GX",
     "aliases": ["GX Esport"],
     "filename": "Team_GX.png"
+  },
+  {
+    "name": "Fennex Esport",
+    "aliases": ["Fennex Esports"],
+    "filename": "Fennex_Esport.png"
   }
 ]
