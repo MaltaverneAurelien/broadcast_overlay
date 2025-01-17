@@ -703,5 +703,15 @@
     "name": "Gostfild Esport ",
     "aliases": ["Gostfild"],
     "filename": "Gostfild_Esport.png"
+  },
+  {
+    "name": "Newd eSport ",
+    "aliases": ["Newd Esport"],
+    "filename": "Newd_Esport.png"
+  },
+  {
+    "name": "SniR E-Sport ",
+    "aliases": ["Snir Esport"],
+    "filename": "Snir_Esport.png"
   }
 ]
