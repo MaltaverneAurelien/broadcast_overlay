@@ -718,5 +718,20 @@
     "name": "GhostWhite Beta",
     "aliases": ["GhostWhite"],
     "filename": "Ghostwhite.png"
+  },
+  {
+    "name": "Dortmund Esports",
+    "aliases": ["Dortmund Esport"],
+    "filename": "Dortmund_Esports.png"
+  },
+  {
+    "name": "Ghost Inferno",
+    "aliases": ["Ghost Inferno"],
+    "filename": "Ghost_Inferno.png"
+  },
+  {
+    "name": "Icare Esport",
+    "aliases": ["Icare Esport Hades"],
+    "filename": "Icare_Esport.png"
   }
 ]
