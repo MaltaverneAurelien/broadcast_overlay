@@ -743,5 +743,15 @@
     "name": "Fennex Esport",
     "aliases": ["Fennex Esports"],
     "filename": "Fennex_Esport.png"
+  },
+  {
+    "name": "Sentinel",
+    "aliases": ["Sentinel Esport"],
+    "filename": "Sentinel.png"
+  },
+  {
+    "name": "Golden Warriors",
+    "aliases": ["Golden Warriors Noir"],
+    "filename": "Golden_Warriors.png"
   }
 ]
