@@ -733,5 +733,10 @@
     "name": "Icare Esport",
     "aliases": ["Icare Esport Hades"],
     "filename": "Icare_Esport.png"
+  },
+  {
+    "name": "Team GX",
+    "aliases": ["GX Esport"],
+    "filename": "Team_GX.png"
   }
 ]
