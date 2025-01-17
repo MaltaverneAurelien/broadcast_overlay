@@ -700,18 +700,23 @@
     "filename": "Les_copaings.png"
   },
   {
-    "name": "Gostfild Esport ",
+    "name": "Gostfild Esport",
     "aliases": ["Gostfild"],
     "filename": "Gostfild_Esport.png"
   },
   {
-    "name": "Newd eSport ",
+    "name": "Newd eSport",
     "aliases": ["Newd Esport"],
     "filename": "Newd_Esport.png"
   },
   {
-    "name": "SniR E-Sport ",
+    "name": "SniR E-Sport",
     "aliases": ["Snir Esport"],
     "filename": "Snir_Esport.png"
+  },
+  {
+    "name": "GhostWhite Beta",
+    "aliases": ["GhostWhite"],
+    "filename": "Ghostwhite.png"
   }
 ]
