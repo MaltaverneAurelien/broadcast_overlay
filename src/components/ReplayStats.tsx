@@ -27,10 +27,10 @@ const ReplayStats: React.FC<Props> = ({ player, state, lastGoal }) => {
           color={getTeamColor(lastGoal?.scorer.teamnum || 0)}
           className="w-[38rem] h-24"
         >
-          <img
+          {/* <img
             src="./hiver_background_player.png"
             className={`absolute w-full h-full top-0 right-0.5`}
-          />
+          /> */}
           <div className="w-full flex justify-around px-12 items-center pt-1">
             <div className="flex flex-col items-center gap-y-1.5">
               <img
