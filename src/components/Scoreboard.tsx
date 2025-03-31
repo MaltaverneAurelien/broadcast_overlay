@@ -125,15 +125,15 @@ const Scoreboard: React.FC<Props> = ({
               <p className="mx-auto uppercase">Overtime</p>
             </Card>
           )}
-          {/* {isOT === false && (
+          {isOT === false && (
             <Card color="main" className="w-2/3 h-9 mx-auto">
-              <img
+              {/* <img
                 src="./hiver_background_player.png"
                 className={`absolute w-full h-full top-0 right-0.5`}
-              />
-              <p className="mx-auto uppercase">DCup #45 - 3vs3</p>
+              /> */}
+              <p className="mx-auto uppercase">GX Cup #1 - 3vs3</p>
             </Card>
-          )} */}
+          )}
         </div>
       </div>
       <div className="col-span-4 flex flex-col gap-y-1">
