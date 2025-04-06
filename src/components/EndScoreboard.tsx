@@ -57,7 +57,7 @@ const EndScoreboard: React.FC<Props> = ({
         muted
         className="absolute -z-10"
       >
-        <source src={background} type="video/mp4" />
+        <source src={backgroundArcane} type="video/mp4" />
       </video>
       <div className="flex flex-col gap-y-8 px-16 pt-12">
         <div className="flex justify-center w-full">
