@@ -431,7 +431,7 @@
   },
   {
     "name": "SPM",
-    "aliases": ["SPM"],
+    "aliases": ["SPM Solar"],
     "filename": "SPM.png"
   },
   {
@@ -753,5 +753,135 @@
     "name": "Golden Warriors",
     "aliases": ["Golden Warriors Noir"],
     "filename": "Golden_Warriors.png"
-  }
+  },
+  {
+    "name": "Azul",
+    "aliases": ["Azul"],
+    "filename": "Azul.png"
+  },
+  {
+    "name": "Enisorail",
+    "aliases": ["Enisorail Esport"],
+    "filename": "Enisorail.png"
+  },
+  {
+    "name": "Fight For Ever",
+    "aliases": ["Fight For Ever"],
+    "filename": "Fight_For_Ever.png"
+  },
+  {
+    "name": "Fraudes",
+    "aliases": ["Fraudes"],
+    "filename": "Fraudes.png"
+  },
+  {
+    "name": "Julien Beats",
+    "aliases": ["Julien Beats"],
+    "filename": "Julien_Beats.png"
+  },
+  {
+    "name": "Kyodo Esport",
+    "aliases": ["Kyodo Esport"],
+    "filename": "Kyodo_Esport.png"
+  },
+  {
+    "name": "Manshine City",
+    "aliases": ["Manshine City"],
+    "filename": "Manshine_City.png"
+  },
+  {
+    "name": "Monclizzy FC",
+    "aliases": ["Monclizzy FC"],
+    "filename": "Monclizzy_FC.png"
+  },
+  {
+    "name": "Nemesis",
+    "aliases": ["Nemesis"],
+    "filename": "Nemesis.png"
+  },
+  {
+    "name": "Notorious Esport",
+    "aliases": ["Notorious Esport"],
+    "filename": "Notorious_Esport.png"
+  },
+  {
+    "name": "NS Esport",
+    "aliases": ["NS Esport"],
+    "filename": "NS_Esport.png"
+  },
+  {
+    "name": "Patata Speed",
+    "aliases": ["Patata Speed"],
+    "filename": "Patata_Speed.png"
+  },
+  {
+    "name": "Resurgence Corp",
+    "aliases": ["Resurgence Corp"],
+    "filename": "Resurgence_Corp.png"
+  },
+  {
+    "name": "Sentient Esport",
+    "aliases": ["Sentient Esport"],
+    "filename": "Sentient_Esport.png"
+  },
+  {
+    "name": "Sigma Boyz",
+    "aliases": ["Sigma Boyz"],
+    "filename": "Sigma_Boyz.png"
+  },
+  {
+    "name": "Souls Onyx",
+    "aliases": ["Souls Onyx"],
+    "filename": "Souls_Onyx.png"
+  },
+  {
+    "name": "Stay First Esport",
+    "aliases": ["Stay First Esport"],
+    "filename": "Stay_First_Esport.png"
+  },
+  {
+    "name": "STP MESSI",
+    "aliases": ["STP MESSI"],
+    "filename": "STP_MESSI.png"
+  },
+  {
+    "name": "The French Baguette",
+    "aliases": ["The French Baguette"],
+    "filename": "The_French_Baguette.png"
+  },
+  {
+    "name": "Valoria",
+    "aliases": ["Valoria"],
+    "filename": "Valoria.png"
+  },
+  {
+    "name": "Violet",
+    "aliases": ["Violet"],
+    "filename": "Violet.png"
+  },
+  {
+    "name": "Washed Up Boys",
+    "aliases": ["Washed Up Boys"],
+    "filename": "Washed_Up_Boys.png"
+  },
+  {
+    "name": "Xeno Eternal",
+    "aliases": ["Xeno Eternal"],
+    "filename": "Xeno_Eternal.png"
+  },
+  {
+    "name": "Ananas Gang",
+    "aliases": ["Ananas Gang"],
+    "filename": "Ananas_Gang.png"
+  },
+  {
+    "name": "Scald Azur",
+    "aliases": ["Scald Azur"],
+    "filename": "Scald.png"
+  },
+  {
+    "name": "Scald Navy",
+    "aliases": ["Scald Navy"],
+    "filename": "Scald.png"
+  }  
 ]
