@@ -131,7 +131,7 @@ const Scoreboard: React.FC<Props> = ({
                 src="./hiver_background_player.png"
                 className={`absolute w-full h-full top-0 right-0.5`}
               /> */}
-              {/* <p className="mx-auto uppercase">GX Cup #1 - 3vs3</p> */}
+              <p className="mx-auto uppercase">Game Viewer !pp</p>
             </Card>
           )}
         </div>
