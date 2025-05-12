@@ -637,17 +637,17 @@
   {
     "name": "LCE BLEU",
     "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_Rouge.png"
+    "filename": "LCE_BLANC_V2.png"
   },
   {
     "name": "LCE BLANC",
     "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_Rouge.png"
+    "filename": "LCE_BLANC_V2.png"
   },
   {
     "name": "LCE ROUGE",
     "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_Rouge.png"
+    "filename": "LCE_BLANC_V2.png"
   },
   {
     "name": "Veridict Esport",
@@ -883,5 +883,35 @@
     "name": "Scald Navy",
     "aliases": ["Scald Navy"],
     "filename": "Scald.png"
+  },
+  {
+    "name": "Cosmo Esports",
+    "aliases": ["Cosmo Esport"],
+    "filename": "Cosmo_Esports.png"
+  },
+  {
+    "name": "FLC Esport",
+    "aliases": ["FLC Esports"],
+    "filename": "FLC_Esport.png"
+  },
+  {
+    "name": "New Generation Faim",
+    "aliases": ["NewGenerationFaim"],
+    "filename": "NewGenerationFaim.png"
+  },
+  {
+    "name": "Nitro Surge",
+    "aliases": ["NitroSurge"],
+    "filename": "Nitro_Surge.png"
+  },
+  {
+    "name": "Olympe Esport",
+    "aliases": ["Olympe Hades"],
+    "filename": "Olympe_Esport.png"
+  },
+  {
+    "name": "Paps Esport",
+    "aliases": ["Paps Esports"],
+    "filename": "Paps_esport.png"
   }
 ]
