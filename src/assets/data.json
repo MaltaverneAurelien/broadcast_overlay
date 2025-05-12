@@ -913,5 +913,15 @@
     "name": "Paps Esport",
     "aliases": ["Paps Esports"],
     "filename": "Paps_esport.png"
+  },
+  {
+    "name": "Monster",
+    "aliases": ["Monster"],
+    "filename": "Monster.png"
+  },
+  {
+    "name": "Redbull",
+    "aliases": ["Redbull"],
+    "filename": "Redbull.png"
   }
 ]
