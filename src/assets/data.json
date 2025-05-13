@@ -923,5 +923,25 @@
     "name": "Redbull",
     "aliases": ["Redbull"],
     "filename": "Redbull.png"
+  },
+  {
+    "name": "Goud Guys",
+    "aliases": ["Good Guys"],
+    "filename": "Goud_guys.png"
+  },
+  {
+    "name": "NLS Blue",
+    "aliases": ["NLS"],
+    "filename": "NLS_blue.png"
+  },
+  {
+    "name": "Team Lystral",
+    "aliases": ["Lystral Esport"],
+    "filename": "Team_Lystral.png"
+  },
+  {
+    "name": "x9 Alpha",
+    "aliases": ["x9Alpha"],
+    "filename": "x9_alpha.png"
   }
 ]
