@@ -1023,5 +1023,10 @@
     "name": "Evyl Epsilon",
     "aliases": ["EvylEpsilon"],
     "filename": "evyl_epsilon.png"
+  },
+  {
+    "name": "Zeepichass",
+    "aliases": ["Pipiche"],
+    "filename": "Pipiche.png"
   }
 ]
