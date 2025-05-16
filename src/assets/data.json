@@ -636,18 +636,18 @@
   },
   {
     "name": "LCE BLEU",
-    "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_BLANC_V2.png"
+    "aliases": ["LCE"],
+    "filename": "LCE_Blue.png"
   },
   {
     "name": "LCE BLANC",
-    "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_BLANC_V2.png"
+    "aliases": ["LCE"],
+    "filename": "LCE_Blanc.png"
   },
   {
     "name": "LCE ROUGE",
-    "aliases": ["LCE Bleu, LCE Blanc, LCE Rouge"],
-    "filename": "LCE_BLANC_V2.png"
+    "aliases": ["LCE"],
+    "filename": "LCE_Rouge.png"
   },
   {
     "name": "Veridict Esport",
@@ -715,8 +715,8 @@
     "filename": "Snir_Esport.png"
   },
   {
-    "name": "GhostWhite Beta",
-    "aliases": ["GhostWhite"],
+    "name": "GhostWhite",
+    "aliases": ["GhostWhite Alpha"],
     "filename": "Ghostwhite.png"
   },
   {
@@ -753,6 +753,11 @@
     "name": "Golden Warriors",
     "aliases": ["Golden Warriors Noir"],
     "filename": "Golden_Warriors.png"
+  },
+  {
+    "name": "Golden Warriors Vert",
+    "aliases": ["Golden Warriors Vert"],
+    "filename": "Golden_Warriors_Vert.png"
   },
   {
     "name": "Azul",
@@ -943,5 +948,80 @@
     "name": "x9 Alpha",
     "aliases": ["x9Alpha"],
     "filename": "x9_alpha.png"
+  },
+  {
+    "name": "Obscura",
+    "aliases": ["Team DID"],
+    "filename": "Team_DID.png"
+  },
+  {
+    "name": "Daylight ESC",
+    "aliases": ["Daylight"],
+    "filename": "Daylight_ESC.png"
+  },
+  {
+    "name": "Lunar",
+    "aliases": ["Lunar Esport"],
+    "filename": "Lunar.png"
+  },
+  {
+    "name": "Nightwolves Eclipse",
+    "aliases": ["Nightwolves"],
+    "filename": "Nightwolves_eclipse.png"
+  },
+  {
+    "name": "Allo",
+    "aliases": ["Allo Esport"],
+    "filename": "Allo.png"
+  },
+  {
+    "name": "Infinity",
+    "aliases": ["Team DID"],
+    "filename": "Team_DID.png"
+  },
+  {
+    "name": "Cold Ballers",
+    "aliases": ["ColdBallers"],
+    "filename": "cold_ballers.png"
+  },
+  {
+    "name": "La 4L",
+    "aliases": ["La 4l"],
+    "filename": "La_4l.png"
+  },
+  {
+    "name": "Tumple Light",
+    "aliases": ["TumpleLight"],
+    "filename": "tumple_light.png"
+  },
+  {
+    "name": "ILLIT",
+    "aliases": ["Illit"],
+    "filename": "ILLIT.png"
+  },
+  {
+    "name": "Team Divergentes",
+    "aliases": ["Divergentes"],
+    "filename": "Team_Divergentes.png"
+  },
+  {
+    "name": "Minesty",
+    "aliases": ["minesty"],
+    "filename": "minesty.png"
+  },
+  {
+    "name": "Radon",
+    "aliases": ["radon"],
+    "filename": "radon.png"
+  },
+  {
+    "name": "Nytrix Esport",
+    "aliases": ["Nytrix"],
+    "filename": "nytrix_esport.png"
+  },
+  {
+    "name": "Evyl Epsilon",
+    "aliases": ["EvylEpsilon"],
+    "filename": "evyl_epsilon.png"
   }
 ]
