@@ -1038,5 +1038,15 @@
     "name": "Falcons",
     "aliases": ["Falcons"],
     "filename": "Falcons.png"
+  },
+  {
+    "name": "EZM Squad",
+    "aliases": ["EZM Squad"],
+    "filename": "EZM_Squad.png"
+  },
+  {
+    "name": "Axolotls",
+    "aliases": ["Axolotls"],
+    "filename": "Axolotls.png"
   }
 ]
